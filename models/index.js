@@ -65,7 +65,7 @@ User.hasMany(Houseplant, {
 })
 
 // Housplant belongs to many users through favorites
-Houseplant.belongsToMany(Favorite, {
+Houseplant.belongsToMany(User, {
     through: {
         model: Favorite,
     },
