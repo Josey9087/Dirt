@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS dirt_db;
+CREATE DATABASE dirt_db;
