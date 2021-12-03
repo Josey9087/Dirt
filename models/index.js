@@ -2,7 +2,8 @@ const Comment = require('./Comment');
 const Favorite = require('./Favorite');
 const Houseplant = require('./Houseplant');
 const Photo = require('./Photo');
-const PostComment = require('./PostComments');
+const PostComment = require('./PostComment');
+const PlantPhoto = require('./PlantPhoto')
 const Post = require('./Post');
 const User = require('./User');
 
@@ -80,10 +81,21 @@ Houseplant.belongsToMany(Favorite, {
     foreignKey: 'houseplant_id',
 })
 
+// houseplant has one plantphoto
+Houseplant.hasOne(PlantPhoto, {
+    foreignKey: 'plant_id',
+})
+
+// plantphoto belongs to houseplant
+PlantPhoto.belongsTo(Houseplant, {
+    foreignKey: 'plant_id',
+})
+
 module.exports = {
     Comment,
     Favorite,
     Houseplant,
+    PlantPhoto,
     Photo,
     PostComment,
     Post, 

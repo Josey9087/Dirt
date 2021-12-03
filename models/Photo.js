@@ -7,10 +7,9 @@ Photo.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            references: {
-            model: 'post',
-            key: 'id',
-             },
+            allowNull: false,
+            autoIncrement: true,
+            primaryKey: true,
         },
         post_id: {
             type: DataTypes.INTEGER,

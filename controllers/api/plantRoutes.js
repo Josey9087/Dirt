@@ -1,10 +1,11 @@
 
 const router = require('express').Router();
-const { Comment, Favorite, Houseplant, Photo, Post, PostComment, User } = require('../../models');
+const {PlantPhoto, Houseplant } = require('../../models');
 const { Op } = require("sequelize");
 
 // route to add plant to database (for developers only)
 // perhaps render a form for devs to make it easier?
+
 router.post('/', async (req,res) => {
     try {
         const plantData = await Houseplant.create(req.body);
@@ -21,7 +22,7 @@ router.get('/', async (req,res) => {
         const plantData = await Houseplant.findAll({
           include: 
             [{
-                model:Photo, // may need another model to sperate houplant photos and forum photos
+                model:PlantPhoto,
                 attributes: ['url'],
             }]
           });

@@ -1,38 +1,36 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Houseplant extends Model {}
+class PlantPhoto extends Model {}
 
-Houseplant.init(
+PlantPhoto.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            primaryKey: true,
             allowNull: false,
             autoIncrement: true,
+            primaryKey: true,
         },
-        name: {
+        plant_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'houseplant',
+                key: 'id',
+            },
+        },
+        url: {
             type: DataTypes.STRING,
             allowNull: false,   
         },
-        water: {
-            type: DataTypes.INTEGER,
-        },
-        sunlight: {
-            type: DataTypes.INTEGER,
-
-        },
-        scientific_name: {
-            type: DataTypes.STRING,
-        }
     },
     {
         sequelize,
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'houseplant',
+        modelName: 'plantphoto',
     }
 );
 
-module.exports = Houseplant;
+module.exports = PlantPhoto;
