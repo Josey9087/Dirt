@@ -11,13 +11,6 @@ Favorite.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        houseplant_id: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'houseplant',
-                key: 'id',
-            },
-        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -25,6 +18,13 @@ Favorite.init(
             key: 'id',
             },
         },
+        houseplant_id: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'houseplant',
+                key: 'id',
+            },
+        }
     },
     {
         sequelize,

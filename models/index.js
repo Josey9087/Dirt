@@ -30,7 +30,7 @@ Photo.belongsTo(Post, {
 })
 
 // Posts have many comments through postcomments
-Post.hasMany(Comment, {
+Post.belongsToMany(Comment, {
     through: {
         model: PostComment,
     },
@@ -46,19 +46,8 @@ Comment.belongsTo(Post, {
     as: 'comment-post'
 })
 
-// User has many Favorites
-User.hasMany(Favorite, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE',
-})
-
-// Favorite belongs to user
-Favorite.belongsTo(User, {
-    foreignKey: 'user_id',
-})
-
 // User has many houseplants through favorites
-User.hasMany(Houseplant, {
+User.belongsToMany(Houseplant, {
     through: {
         model: Favorite,
     },
@@ -71,14 +60,6 @@ Houseplant.belongsToMany(User, {
         model: Favorite,
     },
     as: 'houseplant-users'
-})
-// favorite has one houseplant
-Favorite.hasOne(Houseplant, {
-    foreignKey: 'houseplant_id',
-})
-// housplant belongs to many favorites
-Houseplant.belongsToMany(Favorite, {
-    foreignKey: 'houseplant_id',
 })
 
 // houseplant has one plantphoto
