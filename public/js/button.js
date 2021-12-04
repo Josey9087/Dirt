@@ -3,7 +3,12 @@
 // with body params
 // where the params are a json constructed by user inputs
 
+const post 
 const searchButton = document.querySelector('#search-button-id-here')
+
+const getSearch = () => {
+    
+}
 
 body: {
     query: <this is the string you get from user typing in the search box>,
