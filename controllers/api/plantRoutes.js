@@ -91,8 +91,6 @@ router.delete('/:id', async (req,res) => {
 router.post('/search', async (req,res) => {
     // const { search } = await req.body;
    //  req.query
-   req.body.query
-   req.body.water
    // query params vs. request params
     try {
         const plantData = await Houseplant.findAll({
@@ -111,7 +109,7 @@ router.post('/search', async (req,res) => {
                 }
             ],
             limit: 10,
-        });
+        }});
 
         // plantData.then(plants => res.json(plants))
 
