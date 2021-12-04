@@ -2,7 +2,8 @@ const Comment = require('./Comment');
 const Favorite = require('./Favorite');
 const Houseplant = require('./Houseplant');
 const Photo = require('./Photo');
-const PostComment = require('./PostComments');
+const PostComment = require('./PostComment');
+const PlantPhoto = require('./PlantPhoto')
 const Post = require('./Post');
 const User = require('./User');
 
@@ -29,7 +30,7 @@ Photo.belongsTo(Post, {
 })
 
 // Posts have many comments through postcomments
-Post.hasMany(Comment, {
+Post.belongsToMany(Comment, {
     through: {
         model: PostComment,
     },
@@ -45,19 +46,8 @@ Comment.belongsTo(Post, {
     as: 'comment-post'
 })
 
-// User has many Favorites
-User.hasMany(Favorite, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE',
-})
-
-// Favorite belongs to user
-Favorite.belongsTo(User, {
-    foreignKey: 'user_id',
-})
-
 // User has many houseplants through favorites
-User.hasMany(Houseplant, {
+User.belongsToMany(Houseplant, {
     through: {
         model: Favorite,
     },
@@ -71,19 +61,22 @@ Houseplant.belongsToMany(User, {
     },
     as: 'houseplant-users'
 })
-// favorite has one houseplant
-Favorite.hasOne(Houseplant, {
-    foreignKey: 'houseplant_id',
+
+// houseplant has one plantphoto
+Houseplant.hasOne(PlantPhoto, {
+    foreignKey: 'plant_id',
 })
-// housplant belongs to many favorites
-Houseplant.belongsToMany(Favorite, {
-    foreignKey: 'houseplant_id',
+
+// plantphoto belongs to houseplant
+PlantPhoto.belongsTo(Houseplant, {
+    foreignKey: 'plant_id',
 })
 
 module.exports = {
     Comment,
     Favorite,
     Houseplant,
+    PlantPhoto,
     Photo,
     PostComment,
     Post, 

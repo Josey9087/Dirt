@@ -12,3 +12,4 @@ const { Comment, Favorite, Houseplant, Photo, Post, PostComment, User } = requir
 
 // route to destroy session when logged out
 
+module.exports = router;

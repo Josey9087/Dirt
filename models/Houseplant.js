@@ -7,10 +7,9 @@ Houseplant.init(
     {
         id: {
             type: DataTypes.INTEGER,
-            references: {
-            model: 'post',
-            key: 'id',
-             },
+            primaryKey: true,
+            allowNull: false,
+            autoIncrement: true,
         },
         name: {
             type: DataTypes.STRING,
@@ -18,7 +17,6 @@ Houseplant.init(
         },
         water: {
             type: DataTypes.INTEGER,
-            allowNull: false,
         },
         sunlight: {
             type: DataTypes.INTEGER,
