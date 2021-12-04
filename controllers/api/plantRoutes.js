@@ -2,9 +2,10 @@
 const router = require('express').Router();
 const {PlantPhoto, Houseplant } = require('../../models');
 const Sequelize = require('sequelize');
+const { QueryTypes } = require('sequelize');
 const op = Sequelize.Op;
 const operatorsAliases = {
-    $eq: op.eq,
+    $or: op.or,
     $like: op.like,
 }
 
@@ -62,14 +63,19 @@ router.get('/profile/:id', async (req,res) => {
 
         res.status(200).json(plants);
     } catch (err) {
-        res.status(500).json(err);
+        res.status(400).json(err);
     }
  })
 
  // route to delete a single plant based off of id
+ // developers only
 router.delete('/:id', async (req,res) => {
     try {
-        const plantData = await Houseplant.destroy(req.params.id);
+        const plantData = await Houseplant.destroy({
+            where: {
+                id: req.params.id
+            }
+        });
 
         if (!plantData) {
             return res.status(404).json({ message: 'No plant found with this id!' });
@@ -77,21 +83,26 @@ router.delete('/:id', async (req,res) => {
 
         res.status(200).json(plantData);
     } catch (err) {
-        res.status(500).json(err);
+        res.status(400).json(err);
     }
  })
 
 // route to get a specific plant based off of name
-router.get('/search', async (req,res) => {
-    const { search } = '';
+router.post('/search', async (req,res) => {
     // const { search } = await req.body;
+   //  req.query
+   req.body.query
+   req.body.water
+   // query params vs. request params
     try {
         const plantData = await Houseplant.findAll({
             // gets results similar to the query provided
-            where: {
-                name: {
-                    $eq: `%Pothos%`,
-                }
+            where: { 
+                name: { 
+                    $or: {
+                        name: { $like: `%${req.body.query}%`},
+                        scientific_name: { $like: `%${req.body.query}%`}
+                    }
             },
             include: [
                 {
@@ -102,6 +113,8 @@ router.get('/search', async (req,res) => {
             limit: 10,
         });
 
+        // plantData.then(plants => res.json(plants))
+
         if (!plantData) {
             return res.status(404).json({ message: 'No plant found with this name!' });
         }
@@ -109,11 +122,12 @@ router.get('/search', async (req,res) => {
         plants = plantData.map((plant) => plant.get({plain:true}));
 
         // for development purposes use
-        res.status(200).json(plants);
+        res.status(200).json(plantData);
+
         // instead of ->
         // res.render('search', {plants});
     } catch (err) {
-        res.status(500).json(err);
+        res.status(400).json(err);
     }
 })
 
