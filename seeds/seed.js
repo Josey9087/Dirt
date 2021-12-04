@@ -3,7 +3,7 @@ const { User, PlantPhoto, Houseplant, Comment, Post, PostComment, Photo } = requ
 
 const userData = require('./users.json');
 const plantData = require('./plants.json')
-// const postData = require('./posts.json');
+const postData = require ('./posts.json')
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -13,11 +13,14 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  await Houseplant.bulkCreate(plantData, {
+  // await Houseplant.bulkCreate(plantData, {
+  //   individualHooks: true,
+  //   returning: true,
+  // })
+  await Post.bulkCreate(postData, {
     individualHooks: true,
     returning: true,
   })
-
 
 
 //   for (const post of postData) {

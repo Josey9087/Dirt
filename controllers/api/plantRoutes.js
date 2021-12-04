@@ -4,10 +4,6 @@ const {PlantPhoto, Houseplant } = require('../../models');
 const Sequelize = require('sequelize');
 const { QueryTypes } = require('sequelize');
 const op = Sequelize.Op;
-const operatorsAliases = {
-    $or: op.or,
-    $like: op.like,
-}
 
 // route to add plant to database (for developers only)
 // perhaps render a form for devs to make it easier?
@@ -88,19 +84,16 @@ router.delete('/:id', async (req,res) => {
  })
 
 // route to get a specific plant based off of name
-router.post('/search', async (req,res) => {
+router.get('/search/:name', async (req,res) => {
+    console.log(req.params.name)
     // const { search } = await req.body;
    //  req.query
    // query params vs. request params
     try {
         const plantData = await Houseplant.findAll({
             // gets results similar to the query provided
-            where: { 
-                name: { 
-                    $or: {
-                        name: { $like: `%${req.body.query}%`},
-                        scientific_name: { $like: `%${req.body.query}%`}
-                    }
+            where: {
+                        name: { [op.like]: `%${req.params.name}%`}
             },
             include: [
                 {
@@ -109,24 +102,21 @@ router.post('/search', async (req,res) => {
                 }
             ],
             limit: 10,
-        }});
-
+        });
         // plantData.then(plants => res.json(plants))
-
         if (!plantData) {
             return res.status(404).json({ message: 'No plant found with this name!' });
         }
         // maps data and trims excessive info
         plants = plantData.map((plant) => plant.get({plain:true}));
-
         // for development purposes use
-        res.status(200).json(plantData);
-
+        res.status(200).json(plants);
         // instead of ->
         // res.render('search', {plants});
     } catch (err) {
         res.status(400).json(err);
     }
 })
+
 
 module.exports = router;
