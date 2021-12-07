@@ -1,6 +1,6 @@
 [
     {
-        "name": "Snake Plant",
+        "name": "Snake",
         "water": "1",
         "sunlight": "1",
         "scientific_name": "Dracaena Trifasciata"
@@ -598,5 +598,5 @@
         "water": "",
         "sunlight": "",
         "scientific_name": "Peperomia obtusifolia"
-    },
+    }
 ]

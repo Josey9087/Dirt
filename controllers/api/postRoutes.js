@@ -8,7 +8,7 @@ router.post('/', async (req,res) => {
         const postData = await Post.create(req.body);
         
         // redirects you to posts homepage
-        res.redirect('/home')
+        res.status(200).json(postData)
     } catch (err) {
         res.status(500).json(err)
     }
@@ -26,7 +26,12 @@ router.put('/:id', async (req,res) => {
 // route to delete post
 router.delete('/:id', async (req, res) => {
     try {
-        const postData = await Post.destroy(req.params.id, {})
+        const postData = await Post.destroy({
+          where: {
+            id: req.params.id
+          }
+        })
+      res.status(200).json(postData)
     } catch (err) {
         res.status(500).json(err)
     }
@@ -47,8 +52,8 @@ router.get('/home', async (req,res) => {
 
         const posts = postData.map((post) => post.get({plain: true}));
 
-
-        res.render('posts', posts)
+          // res.prependOnceListener('posts', posts)
+        res.status(200).json(posts)
     } catch (err) {
         res.status(500).json(err)
     }
@@ -63,22 +68,19 @@ router.get('/:id', async (req, res) => {
           {
             model: User,
             attributes: ['username'],
-          },
-          {
             model: Comment,
-          },
-          {
             model: Photo,
-            attributes: ['url'],
+            attributes: ['url']
           }
         ],
       });
   
       const post = postData.get({ plain: true });
-  
-      res.status(200).render('post', {
-        ...post,
-      });
+
+      res.status(200).json(post)
+      // res.status(200).render('post', {
+      //   ...post,
+      // });
     } catch (err) {
       res.status(500).json(err);
     }
