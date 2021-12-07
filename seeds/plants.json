@@ -7,44 +7,44 @@
     },
     {
         "name": "Monstera",
-        "water": "",
-        "sunlight": "",
+        "water": "1",
+        "sunlight": "3",
         "scientific_name": "Monstera Deliciosa"
     },
     {
         "name": "Spider Plant",
-        "water": "",
-        "sunlight": "",
+        "water": "3",
+        "sunlight": "3",
         "scientific_name": "Chlorophytum comosum"
     },
     {
         "name": "English Ivy",
-        "water": "",
-        "sunlight": "",
+        "water": "1",
+        "sunlight": "4",
         "scientific_name": "Hedera Helix"
     },
     {
         "name": "Dragon Tree",
-        "water": "",
-        "sunlight": "",
+        "water": "2",
+        "sunlight": "5",
         "scientific_name": "Dracaena marginata"
     },
     {
         "name": "Silver Dollar Vine",
-        "water": "",
-        "sunlight": "",
+        "water": "4",
+        "sunlight": "5",
         "scientific_name": "Xerosicyos danguyl"
     },
     {
         "name": "Inchplant",
-        "water": "",
-        "sunlight": "",
+        "water": "5",
+        "sunlight": "4",
         "scientific_name": "Tradescantia zebrina"
     },
     {
         "name": "Heartleaf Philodendron",
-        "water": "",
-        "sunlight": "",
+        "water": "2",
+        "sunlight": "1",
         "scientific_name": "Philodendron hederaceum"
     },
     {
