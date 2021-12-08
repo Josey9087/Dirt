@@ -1,9 +1,9 @@
 
 const router = require('express').Router();
-const { Comment, Favorite, Houseplant, Photo, Post, PostComment, User } = require('../../models')
+const { Comment, Favorite, Houseplant, Photo, Post, PostComment, User } = require('../models')
 
 // route to add user
-router.post('/', async (req, res) => {
+router.post('/user', async (req, res) => {
   try {
     const userData = await User.findOne({where: {email: req.body.email}});
     if(userData){
@@ -36,10 +36,29 @@ router.post('/login', async (req, res) => {
         .json({ message: 'Incorrect email or password, please try again' });
       return;
     }
-
-    res.json({ user: userData, message: 'You are now logged in!' });
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
+      res.json({ user: req.session.user_id, message: 'You are now logged in!' });
+    });
   } catch (err) {
-    res.status(400).json(err);
+    res.status(400).json("its something else");
+  }
+});
+
+//Logout
+router.post('/logout', async (req, res) => {
+  try{ const userData = await User.findOne({ where: { email: req.body.email } });
+  if (req.session.logged_in) {
+    // Remove the session variables
+    req.session.destroy(() => {
+      res.status(200).json("logged out");
+    });
+  } else {
+    res.status(200).json("something went wrong")
+  }
+  } catch (err) {
+    res.status(400).json("its something else");
   }
 });
 
@@ -48,7 +67,7 @@ router.get('/:id', async (req, res) => {
     try {
       const userData = await User.findByPk(req.params.id);
       if (!userData) {
-        res.status(404).json({ message: 'No user with this id!' });
+        res.status(404).json({ message: 'defualting to get route instead of login!' });
         return;
       }
       res.status(200).json(userData);
@@ -92,10 +111,11 @@ router.get('/:id', async (req, res) => {
       res.status(500).json(err);
     }
   });
-// route to delete user
 
 // route to check login credentials and start session if they exist
-
+router.get('/login', async (req, res) => {
+  res.status(200).json("good route!")
+});
 // route to destroy session when logged out
 
 module.exports = router;
