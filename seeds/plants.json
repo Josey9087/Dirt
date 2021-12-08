@@ -1,599 +1,699 @@
 [
     {
+        "id": 1,
         "name": "Snake",
         "water": "1",
         "sunlight": "1",
         "scientific_name": "Dracaena Trifasciata"
     },
     {
+        "id": 2,
         "name": "Monstera",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Monstera Deliciosa"
     },
     {
+        "id": 3,
         "name": "Spider Plant",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Chlorophytum Comosum"
     },
     {
+        "id": 4,
         "name": "English Ivy",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Hedera Helix"
     },
     {
+        "id": 5,
         "name": "Dragon Tree",
         "water": "2",
         "sunlight": "3",
         "scientific_name": "Dracaena Marginata"
     },
     {
+        "id": 6,
         "name": "Silver Dollar Vine",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Xerosicyos Danguyl"
     },
     {
+        "id": 7,
         "name": "Inchplant",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Tradescantia Zebrina"
     },
     {
+        "id": 8,
         "name": "Heartleaf Philodendron",
         "water": "2",
         "sunlight": "1",
         "scientific_name": "Philodendron Hederaceum"
     },
     {
+        "id": 9,
         "name": "Money Tree",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Pachira Aquatica"
     },
     {
+        "id": 10,
         "name": "Banana Leaf Fig",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Ficus Alii"
     },
     {
+        "id": 11,
         "name": "Peacock Plant",
         "water": "4",
         "sunlight": "2",
         "scientific_name": "Calathea Makoyana"
     },
     {
+        "id": 12,
         "name": "Purple Shamrock",
         "water": "2",
         "sunlight": "3",
         "scientific_name": "Oxalis Triangularis"
     },
     {
+        "id": 13,
         "name": "Ponytail Palm",
         "water": "1",
         "sunlight": "4",
         "scientific_name": "Beaucarnea Recurvata"
     },
     {
+        "id": 14,
         "name": "Variegates Wax Plant",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Hoya Carnosa Variegata 'Tricolor' "
     },
     {
+        "id": 15,
         "name": "Maidenhair Fern",
         "water": "5",
         "sunlight": "2",
         "scientific_name": "Adiantum"
     },
     {
+        "id": 16,
         "name": "Paddle Plant",
         "water": "1",
         "sunlight": "4",
         "scientific_name": "Kalanchoe Thyrsiflora"
     },
     {
+        "id": 17,
         "name": "Prayer Plant",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Maranta Leuconeura"
     },
     {
+        "id": 18,
         "name": "Clivia",
         "water": "2",
         "sunlight": "2",
         "scientific_name": "Clivia Miniata"
     },
     {
+        "id": 19,
         "name": "Jade Plant",
         "water": "2",
         "sunlight": "4",
         "scientific_name": "Crassula Ovata"
     },
     {
+        "id": 20,
         "name": "Baby Jade Plant",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Portulacaria Afra"
     },
     {
+        "id": 21,
         "name": "Variegated Arrowhead Vine",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Syngonium Podophyllum Albo-Variegatum"
     },
     {
+        "id": 22,
         "name": "Christmas Cactus",
         "water": "1",
         "sunlight": "3",
         "scientific_name": "Schlumbergera"
     },
     {
+        "id": 23,
         "name": "Dumb Cane",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Dieffenbachia"
     },
     {
+        "id": 24,
         "name": "Swiss Cheese Plant",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Monstera Adansonii"
     },
     {
+        "id": 25,
         "name": "Weeping Fig",
         "water": "2",
         "sunlight": "5",
         "scientific_name": "Ficus Benjamina"
     },
     {
+        "id": 26,
         "name": "Fiddle Leaf Fig Tree",
         "water": "2",
         "sunlight": "4",
         "scientific_name": "Ficus Lyrata"
     },
     {
+        "id": 27,
         "name": "Hoya Tricolor",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Hoya Carnosa"
     },
     {
+        "id": 28,
         "name": "Bunny Ear Cactus",
         "water": "1",
         "sunlight": "5",
         "scientific_name": "Opuntia Microdasys"
     },
     {
+        "id": 29,
         "name": "Variegated Cast Iron Plant",
         "water": "2",
         "sunlight": "3",
         "scientific_name": "Aspidistra Elatior Okame"
     },
     {
+        "id": 30,
         "name": "Parlor Palm",
         "water": "2",
         "sunlight": "2",
         "scientific_name": "Chamaedorea Elegans"
     },
     {
+        "id": 31,
         "name": "Zebra Plant",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Aphelandra Squarrosa"
     },
     {
+        "id": 32,
         "name": "Emerald Ripple Peperomia",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Peperomia Caperata"
     },
     {
+        "id": 33,
         "name": "Rubber Plant",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Ficus Elastica"
     },
     {
+        "id": 34,
         "name": "Polka Dot Begonia",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Begonia Maculata"
     },
     {
+        "id": 35,
         "name": "Florist Kalanchoe",
         "water": "2",
         "sunlight": "3",
         "scientific_name": "Kalanchoe Blossfeldiana"
     },
     {
+        "id": 36,
         "name": "Chinese Money Plant",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Pilea Peperomioides"
     },
     {
+        "id": 37,
         "name": "Anthurium",
         "water": "2",
         "sunlight": "3",
         "scientific_name": "Anthurium Andraeanum"
     },
     {
+        "id": 38,
         "name": "ZZ Plant",
         "water": "1",
         "sunlight": "1",
         "scientific_name": "Zamioculcas Zamiifolia"
     },
     {
+        "id": 39,
         "name": "Coffee",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Coffea Arabica"
     },
     {
+        "id": 40,
         "name": "Dracaena Warneckii",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Dracaena Deremensis"
     },
     {
+        "id": 41,
         "name": "Cast Iron Plant",
         "water": "2",
         "sunlight": "2",
         "scientific_name": "Aspidistra Elatior"
     },
     {
+        "id": 42,
         "name": "Red Chinese Evergreen",
         "water": "2",
         "sunlight": "3",
         "scientific_name": "Aglaonema Commutatum Red"
     },
     {
+        "id": 43,
         "name": "Gerbera Daisy",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Gerbera Jamesonii"
     },
     {
+        "id": 44,
         "name": "Chinese Evergreen",
         "water": "2",
         "sunlight": "3",
         "scientific_name": "Aglaonema"
     },
     {
+        "id": 45,
         "name": "Croton",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Codiaeum Variegatum"
     },
     {
+        "id": 46,
         "name": "Chinese Croton",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Excoecaria Cochinchinensis"
     },
     {
+        "id": 47,
         "name": "Golden Aralia",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Aralia Cordata"
     },
     {
+        "id": 48,
         "name": "Oyster Plant",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Tradescantia Spathacea"
     },
     {
+        "id": 49,
         "name": "Umbrella Tree",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Schefflera Actinophylla"
     },
     {
+        "id": 50,
         "name": "Ming Aralia",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Polyscias Fruticosa"
     },
     {
+        "id": 51,
         "name": "Aralia Fabian",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Polyscias Scutellaria "
     },
     {
+        "id": 52,
         "name": "Peace Lily",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Spathiphyllum"
     },
     {
+        "id": 53,
         "name": "Air Plants",
         "water": "2",
         "sunlight": "4",
         "scientific_name": "Tillandsia"
     },
     {
+        "id": 54,
         "name": "Barrel Cactus",
         "water": "1",
         "sunlight": "5",
         "scientific_name": "Echinocactus Grusonii"
     },
     {
+        "id": 55,
         "name": "Pothos",
         "water": "2",
         "sunlight": "2",
         "scientific_name": "Epipremnum Aureum"
     },
     {
+        "id": 56,
         "name": "Orchid",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Orchidaceae"
     },
     {
+        "id": 57,
         "name": "Lipstick Plant",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Aeschynanthus Radicans"
     },
     {
+        "id": 58,
         "name": "Grape Ivy",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Cissus Rhombifolia"
     },
     {
+        "id": 59,
         "name": "Bird of Paradise",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Strelitzia Reginae"
     },
     {
+        "id": 60,
         "name": "Eucalyptus",
         "water": "4",
         "sunlight": "5",
         "scientific_name": "Eucalyptus Globulus"
     },
     {
+        "id": 61,
         "name": "Swedish Ivy",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Plectranthus Verticillatus"
     },
     {
+        "id": 62,
         "name": "African Violet",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Saintpaulia"
     },
     {
+        "id": 63,
         "name": "Burro's Tail",
         "water": "1",
         "sunlight": "4",
         "scientific_name": "Sedum Morganianum"
     },
     {
+        "id": 64,
         "name": "Elephant's Ear Kalanchoe",
         "water": "2",
         "sunlight": "4",
         "scientific_name": "Kalanchoe Beharensis"
     },
     {
+        "id": 65,
         "name": "Norfolk Island Pine",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Araucaria Heterophylla"
     },
     {
+        "id": 66,
         "name": "Corn Plant",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Dracaena Fragrans"
     },
     {
+        "id": 67,
         "name": "Lucky Bamboo",
         "water": "5",
         "sunlight": "4",
         "scientific_name": "Dracaena Sanderiana"
     },
     {
+        "id": 68,
         "name": "Sweet Basil",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Ocimum Basilicum"
     },
     {
+        "id": 69,
         "name": "Boston Fern",
         "water": "4",
         "sunlight": "2",
         "scientific_name": "Nephrolepis Exaltata"
     },
     {
+        "id": 70,
         "name": "Geranium",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Pelargonium"
     },
     {
+        "id": 71,
         "name": "Jasmine",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Jasminum"
     },
     {
+        "id": 72,
         "name": "Ti Plant",
         "water": "4",
         "sunlight": "4",
         "scientific_name": "Cordyline Fruticosa"
     },
     {
+        "id": 73,
         "name": "Variegated Dwarf Umbrella Plant",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Schefflera Arboricola Variegata"
     },
     {
+        "id": 74,
         "name": "Crown of Thorns",
         "water": "2",
         "sunlight": "4",
         "scientific_name": "Euphorbia Milii"
     },
     {
+        "id": 75,
         "name": "African Milk Tree",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Euphorbia Trigona"
     },
     {
+        "id": 76,
         "name": "Homalomena",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Homalomena"
     },
     {
+        "id": 77,
         "name": "String of Pearls",
         "water": "1",
         "sunlight": "5",
         "scientific_name": "Senecio Rowleyanus"
     },
     {
+        "id": 78,
         "name": "String of Bananas",
         "water": "1",
         "sunlight": "5",
         "scientific_name": "Senecio Radicans"
     },
     {
+        "id": 79,
         "name": "String of Turtles",
         "water": "1",
         "sunlight": "4",
         "scientific_name": "Peperomia Prostrata"
     },
     {
+        "id": 80,
         "name": "Poinsettia",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Euphorbia Pulcherrima"
     },
     {
+        "id": 81,
         "name": "Cyclamen",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Cyclamen Persicum"
     },
     {
+        "id": 82,
         "name": "Urn Plant",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Aechmea Fasciata"
     },
     {
+        "id": 83,
         "name": "Sword Fern",
         "water": "2",
         "sunlight": "2",
         "scientific_name": "Polystichum Munitum"
     },
     {
+        "id": 84,
         "name": "Never-Never Plant",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Ctenanthe Oppenheimiana"
     },
     {
+        "id": 85,
         "name": "Lemon Lime Philodendron",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Philodendron Hederaceum Lemon"
     },
     {
+        "id": 86,
         "name": "Song of India",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Dracaena Reflexa"
     },
     {
+        "id": 87,
         "name": "Creeping Fig",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Ficus Pumila"
     },
     {
+        "id": 88,
         "name": "Moon Valley Friendship Plant",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Pilea Ovalis Moon Valley"
     },
     {
+        "id": 89,
         "name": "Impatiens",
         "water": "3",
         "sunlight": "5",
         "scientific_name": "Impatiens"
     },
     {
+        "id": 90,
         "name": "Velvet Leaf Philodendron",
         "water": "4",
         "sunlight": "3",
         "scientific_name": "Philodendron Micans"
     },
     {
+        "id": 91,
         "name": "Burle Marx Philodendron",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Philodendron Burle Marx"
     },
     {
+        "id": 92,
         "name": "Horsetail Plant",
         "water": "5",
         "sunlight": "5",
         "scientific_name": "Equisetum Arvense"
     },
     {
+        "id": 93,
         "name": "Baby Rubber Plant",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Peperomia Obtusifolia"
     },
     {
+        "id": 94,
         "name": "Lemon Tree",
         "water": "4",
         "sunlight": "5",
         "scientific_name": "Citrus Limon"
     },
     {
+        "id": 95,
         "name": "Nerve Plant",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Fittonia"
     },
     {
+        "id": 96,
         "name": "Polka Dot Plant",
         "water": "3",
         "sunlight": "2",
         "scientific_name": "Hypoestes Phyllostachya"
     },
     {
+        "id": 97,
         "name": "Jessenia Pothos",
         "water": "3",
         "sunlight": "3",
         "scientific_name": "Epipremnum Aureum Jessenia"
     },
     {
+        "id": 98,
         "name": "Manjula Pothos",
         "water": "3",
         "sunlight": "4",
         "scientific_name": "Epipremnum Aureum Manjula"
     },
     {
+        "id": 99,
         "name": "Creeping Inch Plant",
         "water": "4",
         "sunlight": "2",
         "scientific_name": "Callisia Repens"
     },
     {
+        "id": 100,
         "name": "Philodendron Brasil",
         "water": "2",
         "sunlight": "2",
