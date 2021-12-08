@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Code+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
+      <!-- Nav Bar -->
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -20,6 +21,24 @@
         <li><a href="#">Login</a></li>
       </ul>
     </nav>
-    <section></section>
+    <!-- Search Bar -->
+    <section class="search-bar-section">
+        <div>
+        <form action="/form/submit" method="GET">
+            <input type="text" name="text" class="search" placeholder="Search For a Plant!">
+            <input type="submit" name="submit" class="submit" value="Search">
+          </form>
+        </div>
+    </section>
+    <!-- Photo Cards for search results -->
+        <div class="card">
+            <div class="card-header">Plant Name Goes Here</div>
+            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam laborum fugit architecto aspernatur corrupti ea harum vitae, maxime voluptates? Autem.
+            </div>
+            <div class="card-footer">
+                <button class="btn">Details</button>
+                <button class="btn btn-outline">Save to Wishlist</button>
+            </div>
+        </div>
   </body>
 </html>

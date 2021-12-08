@@ -1,17 +1,22 @@
-*{
-    padding: 0;
+*, *::before, *::after {
+    /* padding: 0; */
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Shadows Into Light', cursive;
   }
   body{
     font-family: 'Shadows Into Light', cursive;
   }
+  /* Nav Bar Section */
   nav{
     background: #7C8A65;
     height: 80px;
     width: 100%;
+    border-style: solid;
+      border-width: 1px;
+      border-color: #251605;
   }
   label.logo{
     color: white;
@@ -91,8 +96,85 @@
       left: 0;
     }
   }
-  section{
+  /* section{
     background: url(bg1.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+  } */
+  /* Search Bar Section */
+  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+  body {
+    margin: 0;
+    /* padding: 0; */
+    background: #D2FDC4;
+    
   }
+  section div {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #251605;
+  }
+  form {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  input {
+    padding: 4px 10px;
+    border: 10;
+    font-size: 16px;
+  }
+  .search {
+    width: 75%;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  .submit {
+    width: 70px;
+    background-color: #251605;
+    color: #ffffff;
+    font-family: 'Shadows Into Light', cursive;
+  }
+  /* Photo Cards Section */
+
+  .card {
+      background: #7C8A65;
+      padding: 1rem;
+      border: 1px solid #251605;
+      border-radius: .25rem;
+  }
+
+  .card-header {
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+  }
+
+  .card-body {
+      font-size: .9rem;
+  }
+
+  .card-footer {
+      margin-top: 1rem;
+  }
+
+  .btn {
+      --color: #DD864F;
+      background: var(--color);
+      color: white;
+      border: none;
+      font-size: 1rem;
+      padding: .5em .75em;
+      border-radius: .25em;
+      cursor: pointer;
+  }
+
+  .btn:hover, .btn:focus {
+      background: #E29565;
+  }
+
+  .btn.btn-outline {
+      background: none;
+      border: 1px solid var(--color);
+      color: white;
+  }
+
