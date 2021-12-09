@@ -4,7 +4,6 @@ const withAuth = require('../utils/auth');
 const Sequelize = require('sequelize');
 const op = Sequelize.Op;
 
-
 // route to get all plants /plants
 router.get('/', async (req,res) => {
   try {
