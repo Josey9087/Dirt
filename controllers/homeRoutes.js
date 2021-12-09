@@ -1,7 +1,26 @@
 const router = require('express').Router();
-const { Comment, Favorite, Houseplant, Photo, Post, PostComment, User } = require('.././models')
+const { Comment, Favorite, Houseplant, PlantPhoto ,Photo, Post, PostComment, User } = require('.././models')
 const withAuth = require('../utils/auth');
 
+
+// route to get all plants /plants
+router.get('/', async (req,res) => {
+  try {
+      const plantData = await Houseplant.findAll({
+        include: 
+          [{
+              model:PlantPhoto,
+              attributes: ['url'],
+          }]
+        });
+
+      plants = plantData.map((plant) => plant.get({plain:true}));
+      // res.status(200).json(plants)
+      res.render('search', {plants});
+  } catch (err) {
+      res.status(500).json(err);
+  }
+});
 
 router.get('/project/:id', async (req, res) => {
   try {

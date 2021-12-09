@@ -3,9 +3,8 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-
+const hbs = exphbs.create({});
 const sequelize = require('./config/connection');
-
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
@@ -15,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 const sess = {
   secret: 'Super secret secret',
   cookie: {
-    maxAge: 3600,
+    maxAge: 8700,
     httpOnly: true,
     secure: false,
     sameSite: 'strict',
@@ -26,6 +25,10 @@ const sess = {
     db: sequelize
   })
 };
+
+// Set Handlebars as the default template engine.
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 app.use(session(sess));
 app.use(express.json());
