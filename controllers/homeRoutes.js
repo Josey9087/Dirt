@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Comment, Favorite, Houseplant, PlantPhoto ,Photo, Post, PostComment, User } = require('.././models')
 const withAuth = require('../utils/auth');
+const Sequelize = require('sequelize');
+const op = Sequelize.Op;
 
 
 // route to get all plants /plants
@@ -21,6 +23,44 @@ router.get('/', async (req,res) => {
       res.status(500).json(err);
   }
 });
+
+// route to get a specific plant based off of name
+router.get('/search/:name', async (req,res) => {
+  console.log(req.params.name)
+  // const { search } = await req.body;
+ //  req.query
+ // query params vs. request params
+  try {
+      const plantData = await Houseplant.findAll({
+          // gets results similar to the query provided
+          where: {
+              [op.or]: {
+                  name: { [op.like]: `%${req.params.name}%`},
+                  scientific_name: { [op.like]: `%${req.params.name}%`}
+              }
+          },
+          include: [
+              {
+                  model:PlantPhoto,
+                  attributes: ['url'],
+              }
+          ],
+          limit: 10,
+      });
+      // plantData.then(plants => res.json(plants))
+      if (!plantData) {
+          return res.status(404).json({ message: 'No plant found with this name!' });
+      }
+      // maps data and trims excessive info
+      plants = plantData.map((plant) => plant.get({plain:true}));
+      // for development purposes use
+      // res.status(200).json(plants);
+      // instead of ->
+      res.render('search', {plants});
+  } catch (err) {
+      res.status(400).json(err);
+  }
+})
 
 router.get('/project/:id', async (req, res) => {
   try {
