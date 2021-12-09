@@ -3,6 +3,7 @@ const { User, PlantPhoto, Houseplant, Comment, Post, PostComment, Photo } = requ
 
 const userData = require('./users.json');
 const plantData = require('./plants.json')
+const plantPhotoData = require('./plantphotos.json')
 const postData = require ('./posts.json')
 
 const seedDatabase = async () => {
@@ -13,15 +14,20 @@ const seedDatabase = async () => {
     returning: true,
   });
 
-  // await Houseplant.bulkCreate(plantData, {
-  //   individualHooks: true,
-  //   returning: true,
-  // })
-  await Post.bulkCreate(postData, {
+  await Houseplant.bulkCreate(plantData, {
     individualHooks: true,
     returning: true,
   })
 
+  await PlantPhoto.bulkCreate(plantPhotoData, {
+    individualHooks: true,
+    returning: true,
+  });
+
+  await Post.bulkCreate(postData, {
+    individualHooks: true,
+    returning: true,
+  })
 
 //   for (const post of postData) {
 //     await Post.create({

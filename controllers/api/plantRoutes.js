@@ -1,8 +1,7 @@
 
 const router = require('express').Router();
-const {PlantPhoto, Houseplant } = require('../../models');
+const { PlantPhoto, Houseplant } = require('../../models');
 const Sequelize = require('sequelize');
-const { QueryTypes } = require('sequelize');
 const op = Sequelize.Op;
 
 // route to add plant to database (for developers only)
@@ -93,7 +92,10 @@ router.get('/search/:name', async (req,res) => {
         const plantData = await Houseplant.findAll({
             // gets results similar to the query provided
             where: {
-                        name: { [op.like]: `%${req.params.name}%`}
+                [op.or]: {
+                    name: { [op.like]: `%${req.params.name}%`},
+                    scientific_name: { [op.like]: `%${req.params.name}%`}
+                }
             },
             include: [
                 {
@@ -118,5 +120,182 @@ router.get('/search/:name', async (req,res) => {
     }
 })
 
+// route to get plants in database based off of low water level
+router.get('/search/low-water', async (req,res) => {
+    try {
+        const plantData = await Houseplant.findAll({
+            // gets results similar to the query provided
+            where: {
+                [op.or]: {
+                    water: 1,
+                    water: 2
+                }
+                    
+            },
+            include: [
+                {
+                    model:PlantPhoto,
+                    attributes: ['url'],
+                }
+            ],
+            limit: 30,
+        });
+        // maps data and trims excessive info
+        plants = plantData.map((plant) => plant.get({plain:true}));
+        // for development purposes use
+        res.status(200).json(plants);
+        // instead of ->
+        // res.render('search', {plants});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
+// route to get plants in database based off of medium water level
+router.get('/search/medium-water', async (req,res) => {
+    try {
+        const plantData = await Houseplant.findAll({
+            // gets results similar to the query provided
+            where: {
+                [op.or]: {
+                    water: 3,
+                    water: 4
+                }
+                    
+            },
+            include: [
+                {
+                    model:PlantPhoto,
+                    attributes: ['url'],
+                }
+            ],
+            limit: 30,
+        });
+        // maps data and trims excessive info
+        plants = plantData.map((plant) => plant.get({plain:true}));
+        // for development purposes use
+        res.status(200).json(plants);
+        // instead of ->
+        // res.render('search', {plants});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
+// route to get plants in database based off of high water level
+router.get('/search/high-water', async (req,res) => {
+    try {
+        const plantData = await Houseplant.findAll({
+            // gets results similar to the query provided
+            where: {
+                water: 5        
+            },
+            include: [
+                {
+                    model:PlantPhoto,
+                    attributes: ['url'],
+                }
+            ],
+            limit: 30,
+        });
+        // maps data and trims excessive info
+        plants = plantData.map((plant) => plant.get({plain:true}));
+        // for development purposes use
+        res.status(200).json(plants);
+        // instead of ->
+        // res.render('search', {plants});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
+// route to get plants in database based off of low sunlight level
+router.get('/search/low-sun', async (req,res) => {
+    try {
+        const plantData = await Houseplant.findAll({
+            // gets results similar to the query provided
+            where: {
+                [op.or]: {
+                    sunlight: 1,
+                    sunlight: 2
+                }
+                    
+            },
+            include: [
+                {
+                    model:PlantPhoto,
+                    attributes: ['url'],
+                }
+            ],
+            limit: 30,
+        });
+        // maps data and trims excessive info
+        plants = plantData.map((plant) => plant.get({plain:true}));
+        // for development purposes use
+        res.status(200).json(plants);
+        // instead of ->
+        // res.render('search', {plants});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
+// route to get plants in database based off of medium sunlight level
+router.get('/search/medium-sun', async (req,res) => {
+    try {
+        const plantData = await Houseplant.findAll({
+            // gets results similar to the query provided
+            where: {
+                [op.or]: {
+                    sunlight: 3,
+                    sunlight: 4
+                }
+                    
+            },
+            include: [
+                {
+                    model:PlantPhoto,
+                    attributes: ['url'],
+                }
+            ],
+            limit: 30,
+        });
+        // maps data and trims excessive info
+        plants = plantData.map((plant) => plant.get({plain:true}));
+        // for development purposes use
+        res.status(200).json(plants);
+        // instead of ->
+        // res.render('search', {plants});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
+
+// route to get plants in database based off of high sunlight level
+router.get('/search/high-sun', async (req,res) => {
+    try {
+        const plantData = await Houseplant.findAll({
+            // gets results similar to the query provided
+            where: {
+                sunlight: 5       
+            },
+            include: [
+                {
+                    model:PlantPhoto,
+                    attributes: ['url'],
+                }
+            ],
+            limit: 30,
+        });
+        // maps data and trims excessive info
+        plants = plantData.map((plant) => plant.get({plain:true}));
+        // for development purposes use
+        res.status(200).json(plants);
+        // instead of ->
+        // res.render('search', {plants});
+    } catch (err) {
+        res.status(400).json(err);
+    }
+})
 
 module.exports = router;
