@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dirt!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- Nav Bar -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Dirt!&#129716;</label>
+      <ul>
+        <li><a class="active" href="#">Plant Forum</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+    <!-- Search Bar -->
+    <section class="search-bar-section">
+        <div>
+        <form action="/form/submit" method="GET">
+            <input type="text" name="text" class="search" placeholder="Search For a Plant!">
+            <input type="submit" name="submit" class="submit" value="Search">
+          </form>
+        </div>
+    </section>
+    <!-- Photo Cards for search results -->
+        <div class="card">
+            <div class="card-header">Plant Name Goes Here</div>
+            <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam laborum fugit architecto aspernatur corrupti ea harum vitae, maxime voluptates? Autem.
+            </div>
+            <div class="card-footer">
+                <button class="btn">Details</button>
+                <button class="btn btn-outline">Save to Wishlist</button>
+            </div>
+        </div>
+  </body>
+</html>
