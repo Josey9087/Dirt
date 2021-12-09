@@ -1,1 +1,23 @@
 <!-- render results from search here -->
+<!-- Photo Cards for search results -->
+    <!-- Search Bar -->
+    <section class="search-bar-section">
+        <div>
+        <form action="/form/submit" method="GET">
+            <input type="text" name="text" class="search" placeholder="Search For a Plant!">
+            <input type="submit" name="submit" class="submit" value="Search">
+          </form>
+        </div>
+    </section>
+    {{#each plants}}
+        <div class="card">
+            <!-- .getAttribute("plant-id") -->
+            <div class="card-header" data-plant-id={{this.id}} data-plant-name="whatever">{{this.name}}</div>
+            <div class="card-body">{{this.scientific_name}}</div>
+            <div class="card-footer">
+                <a class="hidden">{{this.id}}</a>
+                <button class="btn details">Details</button>
+                <button class="btn btn-outline">Save to Wishlist</button>
+            </div>
+        </div>
+    {{/each}}

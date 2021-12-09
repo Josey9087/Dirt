@@ -17,27 +17,6 @@ router.post('/', async (req,res) => {
     }
 });
 
-// route to get all plants /plants
-router.get('/', async (req,res) => {
-    try {
-        const plantData = await Houseplant.findAll({
-          include: 
-            [{
-                model:PlantPhoto,
-                attributes: ['url'],
-            }]
-          });
-
-        plants = plantData.map((plant) => plant.get({plain:true}));
-        // for testing purposes use 
-          res.status(200).json(plants)
-        // instead of 
-        // res.render('plants', {plants});
-    } catch (err) {
-        res.status(500).json(err);
-    }
-});
-
 // route to get a single plant based off of id
 router.get('/profile/:id', async (req,res) => {
     try {
@@ -53,10 +32,9 @@ router.get('/profile/:id', async (req,res) => {
         if (!plantData) {
             return res.status(404).json({ message: 'No plant found with this id!' });
         }
-
         const plants = plantData.get({plain: true})
-
         res.status(200).json(plants);
+        // res.render('plant', {plants});
     } catch (err) {
         res.status(400).json(err);
     }
@@ -75,7 +53,6 @@ router.delete('/:id', async (req,res) => {
         if (!plantData) {
             return res.status(404).json({ message: 'No plant found with this id!' });
         }
-
         res.status(200).json(plantData);
     } catch (err) {
         res.status(400).json(err);
