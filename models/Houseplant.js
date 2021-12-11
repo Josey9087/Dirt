@@ -23,6 +23,10 @@ Houseplant.init(
         },
         scientific_name: {
             type: DataTypes.STRING,
+        },
+        url: {
+            type: DataTypes.STRING,
+            allowNull: false,   
         }
     },
     {

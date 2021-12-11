@@ -1,6 +1,6 @@
 
 const router = require('express').Router();
-const { PlantPhoto, Houseplant } = require('../../models');
+const { Houseplant } = require('../../models');
 const Sequelize = require('sequelize');
 const op = Sequelize.Op;
 
@@ -20,18 +20,12 @@ router.post('/', async (req,res) => {
 // route to get a single plant based off of id
 router.get('/profile/:id', async (req,res) => {
     try {
-        const plantData = await Houseplant.findByPk(req.params.id, {
-            include: [
-                {
-                    model: PlantPhoto,
-                    attributes: ['url'],
-                }
-            ]
-        });
+        const plantData = await Houseplant.findByPk(req.params.id);
 
         if (!plantData) {
             return res.status(404).json({ message: 'No plant found with this id!' });
         }
+
         const plants = plantData.get({plain: true})
         res.status(200).json(plants);
         // res.render('plant', {plants});
@@ -71,12 +65,6 @@ router.get('/search/low-water', async (req,res) => {
                 }
                     
             },
-            include: [
-                {
-                    model:PlantPhoto,
-                    attributes: ['url'],
-                }
-            ],
             limit: 30,
         });
         // maps data and trims excessive info
@@ -102,12 +90,6 @@ router.get('/search/medium-water', async (req,res) => {
                 }
                     
             },
-            include: [
-                {
-                    model:PlantPhoto,
-                    attributes: ['url'],
-                }
-            ],
             limit: 30,
         });
         // maps data and trims excessive info
@@ -129,12 +111,6 @@ router.get('/search/high-water', async (req,res) => {
             where: {
                 water: 5        
             },
-            include: [
-                {
-                    model:PlantPhoto,
-                    attributes: ['url'],
-                }
-            ],
             limit: 30,
         });
         // maps data and trims excessive info
@@ -160,12 +136,6 @@ router.get('/search/low-sun', async (req,res) => {
                 }
                     
             },
-            include: [
-                {
-                    model:PlantPhoto,
-                    attributes: ['url'],
-                }
-            ],
             limit: 30,
         });
         // maps data and trims excessive info
@@ -191,12 +161,6 @@ router.get('/search/medium-sun', async (req,res) => {
                 }
                     
             },
-            include: [
-                {
-                    model:PlantPhoto,
-                    attributes: ['url'],
-                }
-            ],
             limit: 30,
         });
         // maps data and trims excessive info
@@ -218,12 +182,6 @@ router.get('/search/high-sun', async (req,res) => {
             where: {
                 sunlight: 5       
             },
-            include: [
-                {
-                    model:PlantPhoto,
-                    attributes: ['url'],
-                }
-            ],
             limit: 30,
         });
         // maps data and trims excessive info

@@ -7,13 +7,7 @@ const op = Sequelize.Op;
 // route to get all plants /plants
 router.get('/', async (req,res) => {
   try {
-      const plantData = await Houseplant.findAll({
-        include: 
-          [{
-              model:PlantPhoto,
-              attributes: ['url'],
-          }]
-        });
+      const plantData = await Houseplant.findAll();
 
       plants = plantData.map((plant) => plant.get({plain:true}));
       // res.status(200).json(plants)
@@ -60,6 +54,28 @@ router.get('/search/:name', async (req,res) => {
       res.status(400).json(err);
   }
 })
+
+// route to get all posts and sort by timestamp
+router.get('/forum', async (req,res) => {
+  try {
+      const postData = await Post.findAll({
+          include: [
+              {
+                  model: Photo,
+                  attributes: ['url']
+              }
+          ],
+          // order: '' use timestamps
+      });
+
+      const posts = postData.map((post) => post.get({plain: true}));
+
+        res.render('posts', {posts})
+      // res.status(200).json(posts)
+  } catch (err) {
+      res.status(500).json(err)
+  }
+});
 
 router.get('/project/:id', async (req, res) => {
   try {

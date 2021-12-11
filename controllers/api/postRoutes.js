@@ -37,28 +37,6 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
-// route to get all posts and sort by timestamp
-router.get('/home', async (req,res) => {
-    try {
-        const postData = await Post.findAll({
-            include: [
-                {
-                    model: Photo,
-                    attributes: ['url']
-                }
-            ],
-            // order: '' use timestamps
-        });
-
-        const posts = postData.map((post) => post.get({plain: true}));
-
-          // res.prependOnceListener('posts', posts)
-        res.status(200).json(posts)
-    } catch (err) {
-        res.status(500).json(err)
-    }
-});
-
 // route to get a post , its image, user, and its comments based off of id
 // this route will render a new page with the post and respective comments
 router.get('/:id', async (req, res) => {
