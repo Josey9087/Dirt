@@ -5,7 +5,7 @@ const Sequelize = require('sequelize');
 const op = Sequelize.Op;
 
 // route to get all plants /plants
-router.get('/', async (req,res) => {
+router.get('/home', async (req,res) => {
   try {
       const plantData = await Houseplant.findAll();
 
@@ -32,12 +32,6 @@ router.get('/search/:name', async (req,res) => {
                   scientific_name: { [op.like]: `%${req.params.name}%`}
               }
           },
-          include: [
-              {
-                  model:PlantPhoto,
-                  attributes: ['url'],
-              }
-          ],
           limit: 10,
       });
       // plantData.then(plants => res.json(plants))
@@ -55,72 +49,33 @@ router.get('/search/:name', async (req,res) => {
   }
 })
 
-// route to get all posts and sort by timestamp
-router.get('/forum', async (req,res) => {
-  try {
-      const postData = await Post.findAll({
-          include: [
-              {
-                  model: Photo,
-                  attributes: ['url']
-              }
-          ],
-          // order: '' use timestamps
-      });
-
-      const posts = postData.map((post) => post.get({plain: true}));
-
-        res.render('posts', {posts})
-      // res.status(200).json(posts)
-  } catch (err) {
-      res.status(500).json(err)
-  }
-});
-
-router.get('/project/:id', async (req, res) => {
-  try {
-    const projectData = await Project.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
-
-    const project = projectData.get({ plain: true });
-
-    res.render('project', {
-      ...project,
-      logged_in: req.session.logged_in
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
-    const userData = await User.findAll({
-      attributes: { exclude: ['password'] },
-      order: [['username']],
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] }
     });
-    const users = userData.map((project) => project.get({ plain: true }));
-    res.status(200).json("viewing your profile!")
-    
+
+    const user = userData.get({ plain: true });
+
+    res.render('profile', {
+      ...user,
+      logged_in: true
+    });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.get('/profile/login', (req, res) => {
+router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  try{
-    res.status(200).json("right route")
-  }catch (err){
-    res.status(500).json(err);
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
   }
+
+  res.render('login');
 });
 
 module.exports = router;
