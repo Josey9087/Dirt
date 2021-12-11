@@ -7,13 +7,7 @@ const op = Sequelize.Op;
 // route to get all plants /plants
 router.get('/', async (req,res) => {
   try {
-      const plantData = await Houseplant.findAll({
-        include: 
-          [{
-              model:PlantPhoto,
-              attributes: ['url'],
-          }]
-        });
+      const plantData = await Houseplant.findAll();
 
       plants = plantData.map((plant) => plant.get({plain:true}));
       // res.status(200).json(plants)
