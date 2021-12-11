@@ -4,699 +4,799 @@
         "name": "Snake",
         "water": "1",
         "sunlight": "1",
-        "scientific_name": "Dracaena Trifasciata"
+        "scientific_name": "Dracaena Trifasciata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850019/Dirt/Houseplants/photo-1599009944997-3544a939813c_r74nrz.jpg"
     },
     {
         "id": 2,
         "name": "Monstera",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Monstera Deliciosa"
+        "scientific_name": "Monstera Deliciosa",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900399/Dirt/Houseplants/Monstera_MG_3882sm-738x1024_htjrrl.jpg"
     },
     {
         "id": 3,
         "name": "Spider Plant",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Chlorophytum Comosum"
+        "scientific_name": "Chlorophytum Comosum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900573/Dirt/Houseplants/IMG_5896_i8f7zp.jpg"
     },
     {
         "id": 4,
         "name": "English Ivy",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Hedera Helix"
+        "scientific_name": "Hedera Helix",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850134/Dirt/Houseplants/174bb9fbedc6c056ef192d88e146ea36_rlr4nn.jpg"
     },
     {
         "id": 5,
         "name": "Dragon Tree",
         "water": "2",
         "sunlight": "3",
-        "scientific_name": "Dracaena Marginata"
+        "scientific_name": "Dracaena Marginata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638849946/Dirt/Houseplants/5-Dragon-Tree_ss0f96.jpg"
     },
     {
         "id": 6,
         "name": "Silver Dollar Vine",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Xerosicyos Danguyl"
+        "scientific_name": "Xerosicyos Danguyl",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500//v1638849901/Dirt/Houseplants/6-Silver-Dollar-Vine_tfuoye.jpg"
     },
     {
         "id": 7,
         "name": "Inchplant",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Tradescantia Zebrina"
+        "scientific_name": "Tradescantia Zebrina",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850429/Dirt/Houseplants/Wandering-Jew-Care-7.jpg_f7riqr.webp"
     },
     {
         "id": 8,
         "name": "Heartleaf Philodendron",
         "water": "2",
         "sunlight": "1",
-        "scientific_name": "Philodendron Hederaceum"
+        "scientific_name": "Philodendron Hederaceum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500//v1638849962/Dirt/Houseplants/8-Philodendron-hederaceum_ozfpux.jpg"
     },
     {
         "id": 9,
         "name": "Money Tree",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Pachira Aquatica"
+        "scientific_name": "Pachira Aquatica",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850491/Dirt/Houseplants/TheSpruce1-0cdbe5809c914e25b1d24b0122f39c11_ihwbbt.jpg"
     },
     {
         "id": 10,
         "name": "Banana Leaf Fig",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Ficus Alii"
+        "scientific_name": "Ficus Alii",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850521/Dirt/Houseplants/22909_o3vqer.jpg"
     },
     {
         "id": 11,
         "name": "Peacock Plant",
         "water": "4",
         "sunlight": "2",
-        "scientific_name": "Calathea Makoyana"
+        "scientific_name": "Calathea Makoyana",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850555/Dirt/Houseplants/How-To-Care-For-The-Peacock-Plant-Calathea-Makoyana_qpkaca.jpg"
     },
     {
         "id": 12,
         "name": "Purple Shamrock",
         "water": "2",
         "sunlight": "3",
-        "scientific_name": "Oxalis Triangularis"
+        "scientific_name": "Oxalis Triangularis",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850668/Dirt/Houseplants/s-l300_moaqdd.jpg"
     },
     {
         "id": 13,
         "name": "Ponytail Palm",
         "water": "1",
         "sunlight": "4",
-        "scientific_name": "Beaucarnea Recurvata"
+        "scientific_name": "Beaucarnea Recurvata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850721/Dirt/Houseplants/zoom_PonytailPalmwithBackground-15100855438_j3uudf.jpg"
     },
     {
         "id": 14,
         "name": "Variegates Wax Plant",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Hoya Carnosa Variegata 'Tricolor' "
+        "scientific_name": "Hoya Carnosa Variegata 'Tricolor' ",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850866/Dirt/Houseplants/14-HOYA-CARNOSA-VARIEGATA_iz4det.jpg"
     },
     {
         "id": 15,
         "name": "Maidenhair Fern",
         "water": "5",
         "sunlight": "2",
-        "scientific_name": "Adiantum"
+        "scientific_name": "Adiantum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638850987/Dirt/Houseplants/grow-adiantum-ferns-1902722-10-4e79074809694fa8bea32a562b1eb28a_vu8fmi.jpg"
     },
     {
         "id": 16,
         "name": "Paddle Plant",
         "water": "1",
         "sunlight": "4",
-        "scientific_name": "Kalanchoe Thyrsiflora"
+        "scientific_name": "Kalanchoe Thyrsiflora",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638851092/Dirt/Houseplants/352572c7-9b9a-4f41-a7c4-491dd6861f21_nmvk16.jpg"
     },
     {
         "id": 17,
         "name": "Prayer Plant",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Maranta Leuconeura"
+        "scientific_name": "Maranta Leuconeura",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638851169/Dirt/Houseplants/Prayer-Plant_z8n1us.jpg"
     },
     {
         "id": 18,
         "name": "Clivia",
         "water": "2",
         "sunlight": "2",
-        "scientific_name": "Clivia Miniata"
+        "scientific_name": "Clivia Miniata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638851203/Dirt/Houseplants/200220a-www.whiteflowerfarm.com_-1_winwb6.jpg"
     },
     {
         "id": 19,
         "name": "Jade Plant",
         "water": "2",
         "sunlight": "4",
-        "scientific_name": "Crassula Ovata"
+        "scientific_name": "Crassula Ovata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638851318/Dirt/Houseplants/potted-jade-plant_pxqi4n.jpg"
     },
     {
         "id": 20,
         "name": "Baby Jade Plant",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Portulacaria Afra"
+        "scientific_name": "Portulacaria Afra",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638851775/Dirt/Houseplants/20-Portulacaria-afra_r0z6ym.jpg"
     },
     {
         "id": 21,
         "name": "Variegated Arrowhead Vine",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Syngonium Podophyllum Albo-Variegatum"
+        "scientific_name": "Syngonium Podophyllum Albo-Variegatum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852282/Dirt/Houseplants/r9449-4_syngonium_podophyllum_-_reverted_arrowhead_vine_q07d8q.jpg"
     },
     {
         "id": 22,
         "name": "Christmas Cactus",
         "water": "1",
         "sunlight": "3",
-        "scientific_name": "Schlumbergera"
+        "scientific_name": "Schlumbergera",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852376/Dirt/Houseplants/22-Christmas-Cactus_prk21x.jpg"
     },
     {
         "id": 23,
         "name": "Dumb Cane",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Dieffenbachia"
+        "scientific_name": "Dieffenbachia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852405/Dirt/Houseplants/23-Dumb-Cane_dbfwgr.jpg"
     },
     {
         "id": 24,
         "name": "Swiss Cheese Plant",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Monstera Adansonii"
+        "scientific_name": "Monstera Adansonii",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852436/Dirt/Houseplants/monstera-adansonii_rub8fj.jpg"
     },
     {
         "id": 25,
         "name": "Weeping Fig",
         "water": "2",
         "sunlight": "5",
-        "scientific_name": "Ficus Benjamina"
+        "scientific_name": "Ficus Benjamina",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852530/Dirt/Houseplants/Ficus-Benjamian-Braided-Large_vs6n4d.jpg"
     },
     {
         "id": 26,
         "name": "Fiddle Leaf Fig Tree",
         "water": "2",
         "sunlight": "4",
-        "scientific_name": "Ficus Lyrata"
+        "scientific_name": "Ficus Lyrata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852565/Dirt/Houseplants/26-Fiddle-Leaf-Fig-Tree_zl9qwj.jpg"
     },
     {
         "id": 27,
         "name": "Hoya Tricolor",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Hoya Carnosa"
+        "scientific_name": "Hoya Carnosa",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852608/Dirt/Houseplants/27-Hoya-tricolor_c2jnng.jpg"
     },
     {
         "id": 28,
         "name": "Bunny Ear Cactus",
         "water": "1",
         "sunlight": "5",
-        "scientific_name": "Opuntia Microdasys"
+        "scientific_name": "Opuntia Microdasys",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852657/Dirt/Houseplants/bunny-ear-cactus-guide-5190802-hero-454fc58d4d5b4024931877d278ed14e9_tplwr6.jpg"
     },
     {
         "id": 29,
         "name": "Variegated Cast Iron Plant",
         "water": "2",
         "sunlight": "3",
-        "scientific_name": "Aspidistra Elatior Okame"
+        "scientific_name": "Aspidistra Elatior Okame",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852700/Dirt/Houseplants/29-CAST-IRON-PLANT-Variegated_ai6qco.jpg"
     },
     {
         "id": 30,
         "name": "Parlor Palm",
         "water": "2",
         "sunlight": "2",
-        "scientific_name": "Chamaedorea Elegans"
+        "scientific_name": "Chamaedorea Elegans",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852746/Dirt/Houseplants/2.-Parlor-Palm_1_ecy7dy.jpg"
     },
     {
         "id": 31,
         "name": "Zebra Plant",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Aphelandra Squarrosa"
+        "scientific_name": "Aphelandra Squarrosa",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852792/Dirt/Houseplants/kararileyzebra-4-49cac0d8528c425fafbe1ab4792c991c_jay8cl.jpg"
     },
     {
         "id": 32,
         "name": "Emerald Ripple Peperomia",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Peperomia Caperata"
+        "scientific_name": "Peperomia Caperata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638852844/Dirt/Houseplants/s589352743161335065_p765_i1_w2880_smzjz8.jpg"
     },
     {
         "id": 33,
         "name": "Rubber Plant",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Ficus Elastica"
+        "scientific_name": "Ficus Elastica",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638853611/Dirt/Houseplants/33-Burgundy-rubber-plant_hiyjrc.jpg"
     },
     {
         "id": 34,
         "name": "Polka Dot Begonia",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Begonia Maculata"
+        "scientific_name": "Begonia Maculata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638853663/Dirt/Houseplants/34-Begonia_nhkz6n.jpg"
     },
     {
         "id": 35,
         "name": "Florist Kalanchoe",
         "water": "2",
         "sunlight": "3",
-        "scientific_name": "Kalanchoe Blossfeldiana"
+        "scientific_name": "Kalanchoe Blossfeldiana",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854824/Dirt/Houseplants/10Kalanchoe-blossfeldiana-Flaming-Katy1_wlb4i4.jpg"
     },
     {
         "id": 36,
         "name": "Chinese Money Plant",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Pilea Peperomioides"
+        "scientific_name": "Pilea Peperomioides",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854860/Dirt/Houseplants/img_3265_g5bx5f.jpg"
     },
     {
         "id": 37,
         "name": "Anthurium",
         "water": "2",
         "sunlight": "3",
-        "scientific_name": "Anthurium Andraeanum"
+        "scientific_name": "Anthurium Andraeanum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854922/Dirt/Houseplants/anthurium-brown-leaves-11_zh1cyl.jpg"
     },
     {
         "id": 38,
         "name": "ZZ Plant",
         "water": "1",
         "sunlight": "1",
-        "scientific_name": "Zamioculcas Zamiifolia"
+        "scientific_name": "Zamioculcas Zamiifolia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854023/Dirt/Houseplants/38-ZZ-Plant_wc4ltr.jpg"
     },
     {
         "id": 39,
         "name": "Coffee",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Coffea Arabica"
+        "scientific_name": "Coffea Arabica",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854957/Dirt/Houseplants/39-Coffee-Arabica_vaa44a.jpg"
     },
     {
         "id": 40,
         "name": "Dracaena Warneckii",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Dracaena Deremensis"
+        "scientific_name": "Dracaena Deremensis",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638855001/Dirt/Houseplants/bloomscape_dracaena-ulyses_alt_charcoal-e1625252672252_lrmkka.jpg"
     },
     {
         "id": 41,
         "name": "Cast Iron Plant",
         "water": "2",
         "sunlight": "2",
-        "scientific_name": "Aspidistra Elatior"
+        "scientific_name": "Aspidistra Elatior",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854294/Dirt/Houseplants/41-CAST-IRON-PLANT_vemvbi.jpg"
     },
     {
         "id": 42,
         "name": "Red Chinese Evergreen",
         "water": "2",
         "sunlight": "3",
-        "scientific_name": "Aglaonema Commutatum Red"
+        "scientific_name": "Aglaonema Commutatum Red",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854371/Dirt/Houseplants/Aglaonema_5_indoor_pot_plant_Dimple_Ceramic_Planter_2400x_kyzyp9.jpg"
     },
     {
         "id": 43,
         "name": "Gerbera Daisy",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Gerbera Jamesonii"
+        "scientific_name": "Gerbera Jamesonii",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638855055/Dirt/Houseplants/43-Gerbera-Daisy_awwhwz.jpg"
     },
     {
         "id": 44,
         "name": "Chinese Evergreen",
         "water": "2",
         "sunlight": "3",
-        "scientific_name": "Aglaonema"
+        "scientific_name": "Aglaonema",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638855070/Dirt/Houseplants/44-Chinese-Evergreen_zkq3j8.jpg"
     },
     {
         "id": 45,
         "name": "Croton",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Codiaeum Variegatum"
+        "scientific_name": "Codiaeum Variegatum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638854699/Dirt/Houseplants/45-Croton_fhgovv.jpg"
     },
     {
         "id": 46,
         "name": "Chinese Croton",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Excoecaria Cochinchinensis"
+        "scientific_name": "Excoecaria Cochinchinensis",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638855109/Dirt/Houseplants/1_1_ayh7db.jpg"
     },
     {
         "id": 47,
         "name": "Golden Aralia",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Aralia Cordata"
+        "scientific_name": "Aralia Cordata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638855176/Dirt/Houseplants/Japanese_Aralia_FGT_5_650x_nmu7qm.jpg"
     },
     {
         "id": 48,
         "name": "Oyster Plant",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Tradescantia Spathacea"
+        "scientific_name": "Tradescantia Spathacea",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638855202/Dirt/Houseplants/48-Tradescantia-spathacea_jefy3h.jpg"
     },
     {
         "id": 49,
         "name": "Umbrella Tree",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Schefflera Actinophylla"
+        "scientific_name": "Schefflera Actinophylla",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638855233/Dirt/Houseplants/KaraRileySchefflera-RECIRC-cdce731067d449d4b4a17e8505ef9f24_lo332u.jpg"
     },
     {
         "id": 50,
         "name": "Ming Aralia",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Polyscias Fruticosa"
+        "scientific_name": "Polyscias Fruticosa",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900689/Dirt/Houseplants/29582_mskod1.jpg"
     },
     {
         "id": 51,
         "name": "Aralia Fabian",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Polyscias Scutellaria "
+        "scientific_name": "Polyscias Scutellaria ",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900715/Dirt/Houseplants/AGk0z-ORw1_X8EWxv8UH6s20FGBZEW9VOy_JJpDP5M-KKFf60L61q8luiIu7-By_0LUbJYYhKvNy3r_-HfNVn-_hbxR_CYEF485H-1_xyr5te.png"
     },
     {
         "id": 52,
         "name": "Peace Lily",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Spathiphyllum"
+        "scientific_name": "Spathiphyllum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900728/Dirt/Houseplants/52-Peace-Lily_h7qo2s.jpg"
     },
     {
         "id": 53,
         "name": "Air Plants",
         "water": "2",
         "sunlight": "4",
-        "scientific_name": "Tillandsia"
+        "scientific_name": "Tillandsia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900812/Dirt/Houseplants/Screen-Shot-2018-11-27-at-11.46.40-AM_iaxjdg.png"
     },
     {
         "id": 54,
         "name": "Barrel Cactus",
         "water": "1",
         "sunlight": "5",
-        "scientific_name": "Echinocactus Grusonii"
+        "scientific_name": "Echinocactus Grusonii",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900838/Dirt/Houseplants/grow-echinocactus-indoors-1902973-01-31a0b611563b4614ba6ce10617e7af3c_cs6xfr.jpg"
     },
     {
         "id": 55,
         "name": "Pothos",
         "water": "2",
         "sunlight": "2",
-        "scientific_name": "Epipremnum Aureum"
+        "scientific_name": "Epipremnum Aureum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901158/Dirt/Houseplants/0-17-20041113003_g170yw.jpg"
     },
     {
         "id": 56,
         "name": "Orchid",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Orchidaceae"
+        "scientific_name": "Orchidaceae",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901197/Dirt/Houseplants/the-sill_white-orchid_variant_x-small_bryant_cream_qrdfwl.jpg"
     },
     {
         "id": 57,
         "name": "Lipstick Plant",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Aeschynanthus Radicans"
+        "scientific_name": "Aeschynanthus Radicans",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901219/Dirt/Houseplants/57.-Lipstick-Plant_ei6i8f.jpg"
     },
     {
         "id": 58,
         "name": "Grape Ivy",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Cissus Rhombifolia"
+        "scientific_name": "Cissus Rhombifolia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901234/Dirt/Houseplants/58-Grape-Ivy_f7l50k.jpg"
     },
     {
         "id": 59,
         "name": "Bird of Paradise",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Strelitzia Reginae"
+        "scientific_name": "Strelitzia Reginae",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901260/Dirt/Houseplants/59-Bird-Of-Paradise_rozjch.jpg"
     },
     {
         "id": 60,
         "name": "Eucalyptus",
         "water": "4",
         "sunlight": "5",
-        "scientific_name": "Eucalyptus Globulus"
+        "scientific_name": "Eucalyptus Globulus",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901311/Dirt/Houseplants/5ee33b336d9e04e6fc85947b_shutterstock_706252072-1_gz0jwx.jpg"
     },
     {
         "id": 61,
         "name": "Swedish Ivy",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Plectranthus Verticillatus"
+        "scientific_name": "Plectranthus Verticillatus",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901365/Dirt/Houseplants/QwV6vdxEdMjMpASf3zmYFCEAQhpvTJGH2ehpF7QDKMFiCEDCORtS-AV1Hjg5ZEae-s8c7bkQmXJ8sEp37RwvJSw6Lj8tIHzEprauw23V_YZ5TwY_awyc6d.jpg"
     },
     {
         "id": 62,
         "name": "African Violet",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Saintpaulia"
+        "scientific_name": "Saintpaulia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901433/Dirt/Houseplants/african-violet-desk_lfnl45.jpg"
     },
     {
         "id": 63,
         "name": "Burro's Tail",
         "water": "1",
         "sunlight": "4",
-        "scientific_name": "Sedum Morganianum"
+        "scientific_name": "Sedum Morganianum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901457/Dirt/Houseplants/65-Burro_E2_80_99s-Tail_yan2ji.jpg"
     },
     {
         "id": 64,
         "name": "Elephant's Ear Kalanchoe",
         "water": "2",
         "sunlight": "4",
-        "scientific_name": "Kalanchoe Beharensis"
+        "scientific_name": "Kalanchoe Beharensis",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901484/Dirt/Houseplants/4ee1fbd8f27acda329804e54c16e8314_my0afs.jpg"
     },
     {
         "id": 65,
         "name": "Norfolk Island Pine",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Araucaria Heterophylla"
+        "scientific_name": "Araucaria Heterophylla",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901520/Dirt/Houseplants/67-Norfolk-Island-Pine_zxmmmt.jpg"
     },
     {
         "id": 66,
         "name": "Corn Plant",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Dracaena Fragrans"
+        "scientific_name": "Dracaena Fragrans",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901626/Dirt/Houseplants/29366_pu6pel.jpg"
     },
     {
         "id": 67,
         "name": "Lucky Bamboo",
         "water": "5",
         "sunlight": "4",
-        "scientific_name": "Dracaena Sanderiana"
+        "scientific_name": "Dracaena Sanderiana",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901717/Dirt/Houseplants/69-Dracaena-sanderiana_iyagwg.jpg"
     },
     {
         "id": 68,
         "name": "Sweet Basil",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Ocimum Basilicum"
+        "scientific_name": "Ocimum Basilicum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901968/Dirt/Houseplants/gzetdmqlclvgczddocgn.jpg"
     },
     {
         "id": 69,
         "name": "Boston Fern",
         "water": "4",
         "sunlight": "2",
-        "scientific_name": "Nephrolepis Exaltata"
+        "scientific_name": "Nephrolepis Exaltata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901996/Dirt/Houseplants/kararileybostonferns-7-0183dd5556834787aab1407cd7598560_lbxm4y.jpg"
     },
     {
         "id": 70,
         "name": "Geranium",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Pelargonium"
+        "scientific_name": "Pelargonium",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902064/Dirt/Houseplants/3568c8fe3a1163a489b4492d0530dc03_w40jwb.jpg"
     },
     {
         "id": 71,
         "name": "Jasmine",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Jasminum"
+        "scientific_name": "Jasminum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902095/Dirt/Houseplants/73-Jasmine_u9do8o.jpg"
     },
     {
         "id": 72,
         "name": "Ti Plant",
         "water": "4",
         "sunlight": "4",
-        "scientific_name": "Cordyline Fruticosa"
+        "scientific_name": "Cordyline Fruticosa",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902153/Dirt/Houseplants/fefb1b19-4828-4b9b-b875-c76c051c2b01-tiplant_xhez2v.jpg"
     },
     {
         "id": 73,
         "name": "Variegated Dwarf Umbrella Plant",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Schefflera Arboricola Variegata"
+        "scientific_name": "Schefflera Arboricola Variegata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902212/Dirt/Houseplants/nurserylive-g-plant-schefflera-variegated-plant-in-5-inch-13-cm-grower-round-plastic-black-pot_aqhs3x.jpg"
     },
     {
         "id": 74,
         "name": "Crown of Thorns",
         "water": "2",
         "sunlight": "4",
-        "scientific_name": "Euphorbia Milii"
+        "scientific_name": "Euphorbia Milii",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902377/Dirt/Houseplants/crown-of-thorns-sc-1024x1024_w6hyew.jpg"
     },
     {
         "id": 75,
         "name": "African Milk Tree",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Euphorbia Trigona"
+        "scientific_name": "Euphorbia Trigona",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902620/Dirt/Houseplants/2dfca445bd5a6842a490beefc749b923--african-milk-tree-euphorbia-trigona_slxbze.jpg"
     },
     {
         "id": 76,
         "name": "Homalomena",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Homalomena"
+        "scientific_name": "Homalomena",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902524/Dirt/Houseplants/78-Homalomena_fbzmhn.jpg"
     },
     {
         "id": 77,
         "name": "String of Pearls",
         "water": "1",
         "sunlight": "5",
-        "scientific_name": "Senecio Rowleyanus"
+        "scientific_name": "Senecio Rowleyanus",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638908926/Dirt/Houseplants/string-pearls-faux-plant-cement-planter_bcmmqh.png"
     },
     {
         "id": 78,
         "name": "String of Bananas",
         "water": "1",
         "sunlight": "5",
-        "scientific_name": "Senecio Radicans"
+        "scientific_name": "Senecio Radicans",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902700/Dirt/Houseplants/81-String-of-Bananas_ym4q4v.jpg"
     },
     {
         "id": 79,
         "name": "String of Turtles",
         "water": "1",
         "sunlight": "4",
-        "scientific_name": "Peperomia Prostrata"
+        "scientific_name": "Peperomia Prostrata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902794/Dirt/Houseplants/8.-String-of-Turtles_q8zdsw.jpg"
     },
     {
         "id": 80,
         "name": "Poinsettia",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Euphorbia Pulcherrima"
+        "scientific_name": "Euphorbia Pulcherrima",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902860/Dirt/Houseplants/90-Poinsettia_hvucrd.jpg"
     },
     {
         "id": 81,
         "name": "Cyclamen",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Cyclamen Persicum"
+        "scientific_name": "Cyclamen Persicum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638902984/Dirt/Houseplants/cyclamen-how-to-grow-1_nxb4ik.jpg"
     },
     {
         "id": 82,
         "name": "Urn Plant",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Aechmea Fasciata"
+        "scientific_name": "Aechmea Fasciata",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638903114/Dirt/Houseplants/bloomscape_bromeliad-aechmea-pink_stone-e1629207834555_dltwo9.jpg"
     },
     {
         "id": 83,
         "name": "Sword Fern",
         "water": "2",
         "sunlight": "2",
-        "scientific_name": "Polystichum Munitum"
+        "scientific_name": "Polystichum Munitum",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922503/Dirt/Houseplants/indoor-fern_a7qgb8.jpg"
     },
     {
         "id": 84,
         "name": "Never-Never Plant",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Ctenanthe Oppenheimiana"
+        "scientific_name": "Ctenanthe Oppenheimiana",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922565/Dirt/Houseplants/IMG_28642_zbjryt.jpg"
     },
     {
         "id": 85,
         "name": "Lemon Lime Philodendron",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Philodendron Hederaceum Lemon"
+        "scientific_name": "Philodendron Hederaceum Lemon",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922585/Dirt/Houseplants/90.-Philodendron-_E2_80_98Lemon-Lime_E2_80_99_xf9ql5.jpg"
     },
     {
         "id": 86,
         "name": "Song of India",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Dracaena Reflexa"
+        "scientific_name": "Dracaena Reflexa",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922613/Dirt/Houseplants/91.-Song-of-India_g8deo9.jpg"
     },
     {
         "id": 87,
         "name": "Creeping Fig",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Ficus Pumila"
+        "scientific_name": "Ficus Pumila",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922686/Dirt/Houseplants/kararileycreepingfig-18-fbc6850f2d98421a9123b634de23d31d_y0exmq.jpg"
     },
     {
         "id": 88,
         "name": "Moon Valley Friendship Plant",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Pilea Ovalis Moon Valley"
+        "scientific_name": "Pilea Ovalis Moon Valley",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922725/Dirt/Houseplants/IMG_1830_h9htnv.jpg"
     },
     {
         "id": 89,
         "name": "Impatiens",
         "water": "3",
         "sunlight": "5",
-        "scientific_name": "Impatiens"
+        "scientific_name": "Impatiens",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922809/Dirt/Houseplants/9.-Impatiens_op2ozi.jpg"
     },
     {
         "id": 90,
         "name": "Velvet Leaf Philodendron",
         "water": "4",
         "sunlight": "3",
-        "scientific_name": "Philodendron Micans"
+        "scientific_name": "Philodendron Micans",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922877/Dirt/Houseplants/96.-Philodendron-micans_i7qhco.jpg"
     },
     {
         "id": 91,
         "name": "Burle Marx Philodendron",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Philodendron Burle Marx"
+        "scientific_name": "Philodendron Burle Marx",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922894/Dirt/Houseplants/92.-Philodendron-_E2_80_98Burle-Marx_E2_80_99-1_dee0tj.jpg"
     },
     {
         "id": 92,
         "name": "Horsetail Plant",
         "water": "5",
         "sunlight": "5",
-        "scientific_name": "Equisetum Arvense"
+        "scientific_name": "Equisetum Arvense",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638922998/Dirt/Houseplants/equisetum-scirpoides-dwarf-horsertail-grass-2_jjpc18.jpg"
     },
     {
         "id": 93,
         "name": "Baby Rubber Plant",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Peperomia Obtusifolia"
+        "scientific_name": "Peperomia Obtusifolia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638923064/Dirt/Houseplants/93Peperomia-obtusifolia_nvgbdw.jpg"
     },
     {
         "id": 94,
         "name": "Lemon Tree",
         "water": "4",
         "sunlight": "5",
-        "scientific_name": "Citrus Limon"
+        "scientific_name": "Citrus Limon",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638923100/Dirt/Houseplants/Meyer_Lemon_Tree_1_FGT_8f12f4a2-0ffc-42e3-afc4-31c5e20152b3_650x_fkmx5c.jpg"
     },
     {
         "id": 95,
         "name": "Nerve Plant",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Fittonia"
+        "scientific_name": "Fittonia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638923126/Dirt/Houseplants/95Fittonia_p0iafi.jpg"
     },
     {
         "id": 96,
         "name": "Polka Dot Plant",
         "water": "3",
         "sunlight": "2",
-        "scientific_name": "Hypoestes Phyllostachya"
+        "scientific_name": "Hypoestes Phyllostachya",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638923198/Dirt/Houseplants/polka-dot-2_vn2xrf.jpg"
     },
     {
         "id": 97,
         "name": "Jessenia Pothos",
         "water": "3",
         "sunlight": "3",
-        "scientific_name": "Epipremnum Aureum Jessenia"
+        "scientific_name": "Epipremnum Aureum Jessenia",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638923276/Dirt/Houseplants/1Growing-Jessenia-Pothos_vyl9s3.jpg"
     },
     {
         "id": 98,
         "name": "Manjula Pothos",
         "water": "3",
         "sunlight": "4",
-        "scientific_name": "Epipremnum Aureum Manjula"
+        "scientific_name": "Epipremnum Aureum Manjula",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638923302/Dirt/Houseplants/98-Epipremnum-aureum-_E2_80_98Manjula_E2_80_99_zjicv0.jpg"
     },
     {
         "id": 99,
         "name": "Creeping Inch Plant",
         "water": "4",
         "sunlight": "2",
-        "scientific_name": "Callisia Repens"
+        "scientific_name": "Callisia Repens",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638923340/Dirt/Houseplants/99-callisia-repens_izj15a.jpg"
     },
     {
         "id": 100,
         "name": "Philodendron Brasil",
         "water": "2",
         "sunlight": "2",
-        "scientific_name": "Philodendron Hederaceum Var. Oxycardium"
+        "scientific_name": "Philodendron Hederaceum Var. Oxycardium",
+        "url": "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638901136/Dirt/Houseplants/golden-pothos-in-6-grower-pot-z_jzfglm.jpg"
     }
 ]
