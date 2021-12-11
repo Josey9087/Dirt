@@ -1,1 +1,49 @@
 <!-- renders a single post with its image, title, desc, and comments -->
+<div id="post">
+    <div class="card mb-3">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+
+<div class="header-div">
+    <h3 class="comment-header">Comments</h3>
+</div>
+
+<div id="add-comment">
+    <form id="comment-form">
+        <div class="mb-3">
+            <textarea class="form-control" placeholder="Add comment..."></textarea>
+        </div>
+    </form>
+</div>
+
+<div class="submit-section">
+    <button type="submit" class="btn wide-button" id="comment-button">Post</button>
+</div>
+
+    <div class="comment-section">
+        {{#each comments}}
+        <div id="comment-div">
+            <div class="card mb-3" id="comment">
+                <div class="card-header">
+                    <p>{{this.name}}</p>
+                    <p>timestamp</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -13,6 +13,11 @@ router.post('/user', async (req, res) => {
       return;
     }
       const usercreateData = await User.create(req.body);
+      req.session.save(() => {
+        req.session.user_id = usercreateData.id;
+        req.session.logged_in = true;
+        res.json({ user: req.session.user_id, message: 'You are now logged in!' });
+      });
       res.status(200).json({ message:'User already exists please login'});
   } catch (err) {
     res.status(400).json(err);
@@ -114,7 +119,7 @@ router.get('/user/:id', async (req, res) => {
 
 // route to check login credentials and start session if they exist
 router.get('/login', async (req, res) => {
-  res.render('profile');
+  res.render('login');
 });
 // route to destroy session when logged out
 
