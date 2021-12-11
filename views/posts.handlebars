@@ -3,3 +3,25 @@
  renders all posts with their respective title, image, and description
  -> need a #each handlebar function
  also renders them as an <a> tag with href set to /posts/${plant-id-here} so users can click to see comments -->
+
+{{#each posts}}
+<div class="cards-container">
+        <div class="card mb-3">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{this.title}}</h5>
+            <p class="card-text">{{this.body}}</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+            <div class="card-footer">
+                <button class="btn view-post">View Post</button>
+            </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
+
+<footer class="navbar fixed-bottom navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" id="add-post" href="#">Add Post +</a>
+  </div>
+</footer>

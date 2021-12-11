@@ -137,7 +137,7 @@
   }
   /* Photo Cards Section */
 
-  .card {
+  .card-home {
       background: #7C8A65;
       padding: 1rem;
       border: 1px solid #251605;
@@ -178,3 +178,17 @@
       color: white;
   }
 
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;  }
+
+  .card {
+    width: 50%;
+  }
+
+  /* .container-fluid {
+    display: flex;
+    align-content: center;
+
+  } */

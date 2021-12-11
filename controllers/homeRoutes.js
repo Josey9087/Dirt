@@ -61,6 +61,28 @@ router.get('/search/:name', async (req,res) => {
   }
 })
 
+// route to get all posts and sort by timestamp
+router.get('/forum', async (req,res) => {
+  try {
+      const postData = await Post.findAll({
+          include: [
+              {
+                  model: Photo,
+                  attributes: ['url']
+              }
+          ],
+          // order: '' use timestamps
+      });
+
+      const posts = postData.map((post) => post.get({plain: true}));
+
+        res.render('posts', {posts})
+      // res.status(200).json(posts)
+  } catch (err) {
+      res.status(500).json(err)
+  }
+});
+
 router.get('/project/:id', async (req, res) => {
   try {
     const projectData = await Project.findByPk(req.params.id, {
