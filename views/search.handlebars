@@ -10,7 +10,8 @@
     </section>
 
     {{#each plants}}
-      <div class="cards-container">
+    <div class="card-deck">
+        <div class="cards-container">
         <div class="card mb-3">
             <img src="{{this.url}}" class="card-img-top" alt="{{this.name}}">
             <div class="card-body">
@@ -23,5 +24,6 @@
             </div>
             </div>
         </div>
+    </div>
     </div>
     {{/each}}

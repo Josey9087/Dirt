@@ -1,194 +1,233 @@
 *, *::before, *::after {
-    /* padding: 0; */
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Shadows Into Light', cursive;
-  }
-  body{
-    font-family: 'Shadows Into Light', cursive;
-  }
-  /* Nav Bar Section */
-  nav{
-    background: #7C8A65;
-    height: 80px;
-    width: 100%;
-    border-style: solid;
-      border-width: 1px;
-      border-color: #251605;
-  }
+  /* padding: 0; */
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light', cursive;
+}
+body{
+  font-family: 'Shadows Into Light', cursive;
+}
+/* Nav Bar Section */
+nav{
+  background: #7C8A65;
+  height: 80px;
+  width: 100%;
+  border-style: solid;
+    border-width: 1px;
+    border-color: #251605;
+}
+label.logo{
+  color: white;
+  font-size: 65px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #251605;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
   label.logo{
-    color: white;
-    font-size: 65px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    font-size: 30px;
+    padding-left: 50px;
   }
   nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: #251605;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #D2FDC4;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
-  /* section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  } */
-  /* Search Bar Section */
-  @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-  body {
-    margin: 0;
-    /* padding: 0; */
-    background: #D2FDC4;
-    
-  }
-  section div {
-    border-style: solid;
-    border-width: 3px;
-    border-color: #251605;
-  }
-  form {
-    width: 400px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  input {
-    padding: 4px 10px;
-    border: 10;
     font-size: 16px;
   }
-  .search {
-    width: 75%;
-    font-family: 'Shadows Into Light', cursive;
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
   }
-  .submit {
-    width: 70px;
-    background-color: #251605;
-    color: #ffffff;
-    font-family: 'Shadows Into Light', cursive;
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
   }
-  /* Photo Cards Section */
-
-  .card-home {
-      background: #7C8A65;
-      padding: 1rem;
-      border: 1px solid #251605;
-      border-radius: .25rem;
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
-
-  .card-header {
-      font-size: 1.5rem;
-      margin-bottom: .5rem;
+  nav ul li a{
+    font-size: 20px;
   }
-
-  .card-body {
-      font-size: .9rem;
+  a:hover,a.active{
+    background: none;
+    color: #D2FDC4;
   }
-
-  .card-footer {
-      margin-top: 1rem;
+  #check:checked ~ ul{
+    left: 0;
   }
+}
+/* section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+} */
+/* Search Bar Section */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body {
+  margin: 0;
+  /* padding: 0; */
+  background: #D2FDC4;
+  
+}
+section div {
+  border-style: solid;
+  border-width: 3px;
+  border-color: #251605;
+}
+form {
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+input {
+  padding: 4px 10px;
+  border: 10;
+  font-size: 16px;
+}
+.search {
+  width: 75%;
+  font-family: 'Shadows Into Light', cursive;
+}
+.submit {
+  width: 70px;
+  background-color: #251605;
+  color: #ffffff;
+  font-family: 'Shadows Into Light', cursive;
+}
+/* Photo Cards Section */
 
-  .btn {
-      --color: #DD864F;
-      background: var(--color);
-      color: white;
-      border: none;
-      font-size: 1rem;
-      padding: .5em .75em;
-      border-radius: .25em;
-      cursor: pointer;
-  }
+.card-home {
+    background: #7C8A65;
+    padding: 1rem;
+    border: 1px solid #251605;
+    border-radius: .25rem;
+}
 
-  .btn:hover, .btn:focus {
-      background: #E29565;
-  }
+.card-header {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
 
-  .btn.btn-outline {
-      background: none;
-      border: 1px solid var(--color);
-      color: white;
-  }
+.card-img-top > img {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  transition: 200ms transform ease-in-out;
+}
 
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;  }
+.card:hover > .card-img-top > img {
+  transform: scale(1.025);
+    }
 
-  .card {
-    width: 50%;
-  }
+.card-body {
+    font-size: .9rem;
+}
 
-  /* .container-fluid {
-    display: flex;
-    align-content: center;
+.card-footer {
+    margin-top: 1rem;
+}
 
-  } */
+.btn {
+    --color: #DD864F;
+    background: var(--color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: .5em .75em;
+    border-radius: .25em;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+    background: #E29565;
+}
+
+.btn.btn-outline {
+    background: #DD864F;
+    border: 1px solid var(--color);
+    color: white;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;  }
+
+.card {
+  width: 50%;
+  display: inline-block;
+}
+
+div.card-body {
+  background-color: white;
+  border: 1px solid #251605;
+  border-radius: .25em;
+}
+
+/* .container-fluid {
+  display: flex;
+  align-content: center;
+} */
+
+/* Posts CSS Section */
+
+.navbar-light .navbar-brand {
+color: white;
+background-color: #DD864F;
+border: 1px solid #251605;
+border-radius: .25em;
+margin-left: 45%;
+}
+
+div.container-fluid {
+  background-color: #7C8A65;
+}
+
+button.btn.view-post {
+  border: 1px solid #251605;
+  margin-left: 38%;
+}
