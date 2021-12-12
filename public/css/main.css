@@ -356,7 +356,6 @@ button.btn.view-post {
 }
 
 input {
-    width: 56vw;
     height: 8vh;
     background-color: rgb(240, 240, 240);
     border: solid 2px rgb(118, 118, 118);
