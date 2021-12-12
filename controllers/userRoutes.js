@@ -13,11 +13,17 @@ router.post('/user', async (req, res) => {
       return;
     }
       const usercreateData = await User.create(req.body);
-      res.status(200).json({ message:'User already exists please login'});
+      req.session.save(() => {
+        req.session.user_id = usercreateData.id;
+        req.session.logged_in = true;
+        res.json({ user: req.session.user_id, message: 'You are now logged in!' });
+      });
   } catch (err) {
     res.status(400).json(err);
   }
 });
+
+
 // route to change user? future development? perhaps create a profile page...
 router.post('/login', async (req, res) => {
   try {
@@ -46,21 +52,19 @@ router.post('/login', async (req, res) => {
   }
 });
 
+
 //Logout
-router.post('/logout', async (req, res) => {
-  try{ const userData = await User.findOne({ where: { email: req.body.email } });
+router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
-    // Remove the session variables
     req.session.destroy(() => {
-      res.status(200).json("logged out");
+      res.status(204).end();
     });
   } else {
-    res.status(200).json("something went wrong")
-  }
-  } catch (err) {
-    res.status(400).json("its something else");
+    res.status(404).end();
   }
 });
+
+
 
 // GET a user
 router.get('/user/:id', async (req, res) => {
@@ -111,11 +115,5 @@ router.get('/user/:id', async (req, res) => {
       res.status(500).json(err);
     }
   });
-
-// route to check login credentials and start session if they exist
-router.get('/login', async (req, res) => {
-  res.render('profile');
-});
-// route to destroy session when logged out
 
 module.exports = router;
