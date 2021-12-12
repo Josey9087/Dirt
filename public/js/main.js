@@ -1,6 +1,7 @@
 // Search for plants
+let searchButton;
 const searchInput = document.querySelector('#search-input');
-const searchButton = document.querySelector('.submit');
+searchButton = document.querySelector('.submit');
 
 const getSearch = async (e) => {
     e.preventDefault();
