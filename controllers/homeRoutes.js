@@ -22,6 +22,21 @@ router.get('/home', async (req,res) => {
   }
 });
 
+// route to get a single plant based off of id
+router.get('/plant/:id', async (req,res) => {
+  try {
+      const plantData = await Houseplant.findByPk(req.params.id);
+      if (!plantData) {
+          return res.status(404).json({ message: 'No plant found with this id!' });
+      }
+      const plant = plantData.get({plain: true})
+      // res.status(200).json(plants);
+      res.render('plant', {plant});
+  } catch (err) {
+      res.status(400).json(err);
+  }
+});
+
 // route to get a specific plant based off of name
 router.get('/search/:name', async (req,res) => {
   console.log(req.params.name)
@@ -71,20 +86,16 @@ router.get('/forum/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);
     const commentData = await Comment.findAll({
-      where: {user_id: req.params.id}
-    })
-    const userData = await User.findOne({
-      where: {id: req.params.id}
-    })
+      where: {post_id: req.params.id}
+    });
     const post = postData.get({ plain: true });
     const comments = commentData.map((comment) => comment.get({plain: true}));
+
     // res.status(200).json(post)
     res.status(200).render('post', {
       ...post,
-      ... comments,
-      ... userData
+      comments,
     });
-
   } catch (err) {
     res.status(500).json(err);
   }

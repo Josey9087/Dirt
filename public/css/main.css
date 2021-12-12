@@ -175,6 +175,12 @@ input {
     margin-top: 1rem;
 }
 
+.card-deck {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
     --color: #DD864F;
     background: var(--color);
@@ -301,7 +307,7 @@ button.btn.view-post {
     background-color: rgb(235, 209, 186);
 }
 
-#comment-div {
+.comment-div {
     margin: 10px;
     display: flex;
     justify-content: center;

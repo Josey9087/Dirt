@@ -17,23 +17,6 @@ router.post('/', async (req,res) => {
     }
 });
 
-// route to get a single plant based off of id
-router.get('/profile/:id', async (req,res) => {
-    try {
-        const plantData = await Houseplant.findByPk(req.params.id);
-
-        if (!plantData) {
-            return res.status(404).json({ message: 'No plant found with this id!' });
-        }
-
-        const plants = plantData.get({plain: true})
-        res.status(200).json(plants);
-        // res.render('plant', {plants});
-    } catch (err) {
-        res.status(400).json(err);
-    }
- })
-
  // route to delete a single plant based off of id
  // developers only
 router.delete('/:id', async (req,res) => {
