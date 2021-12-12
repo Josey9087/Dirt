@@ -1,19 +1,18 @@
-
-    <!-- Search Bar -->
-    <section class="search-bar-section">
-        <div>
+<!-- Search Bar -->
+<section class="search-bar-section">
+    <div>
         <form>
             <input id="search-input" type="text" name="text" class="search" placeholder="Search For a Plant!">
             <input type="submit" name="submit" class="submit">
-          </form>
-        </div>
-    </section>
-    {{#each plants}}
-    <div class="card-deck">
-        <div class="cards-container">
-        <div class="card mb-3">
-            <img src="{{this.url}}" class="card-img-top" alt="{{this.name}}">
-            <div class="card-body">
+        </form>
+    </div>
+</section>
+{{#each plants}}
+
+<div class="cards-container">
+    <div class="card mb-3">
+        <img src="{{this.url}}" class="card-img-top" alt="{{this.name}}">
+        <div class="card-body">
             <h5 class="card-title" data-plant-id={{this.id}}>{{this.name}}</h5>
             <p class="card-text">{{this.scientific_name}}</p>
             <p class="card-text"><small class="text-muted"></small></p>
@@ -23,5 +22,5 @@
             </div>
         </div>
     </div>
-    </div>
-    {{/each}}
+</div>
+{{/each}}
