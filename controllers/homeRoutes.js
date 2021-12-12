@@ -1,13 +1,18 @@
 const router = require('express').Router();
-const { Comment, Favorite, Houseplant, PlantPhoto ,Photo, Post, PostComment, User } = require('.././models')
+const { Comment, Favorite, Houseplant ,Photo, Post, PostComment, User } = require('.././models')
 const withAuth = require('../utils/auth');
+// const pageNum = require('../utils/page');
 const Sequelize = require('sequelize');
 const op = Sequelize.Op;
+let offset = 0;
 
 // route to get all plants /plants
 router.get('/home', async (req,res) => {
   try {
-      const plantData = await Houseplant.findAll();
+      const plantData = await Houseplant.findAll({
+        limit: 20,
+        offset: offset,
+      });
 
       plants = plantData.map((plant) => plant.get({plain:true}));
       // res.status(200).json(plants)
@@ -48,6 +53,38 @@ router.get('/search/:name', async (req,res) => {
       res.status(400).json(err);
   }
 })
+
+router.get('/forum', async (req,res) => {
+  try {
+    const postData = await Post.findAll()
+    const posts = postData.map((post) => post.get({plain: true}))
+
+    res.render('posts', {posts})
+  } catch (err) {
+    res.status(400).json(err)
+  }
+})
+
+// route to get a post , its image, user, and its comments based off of id
+// this route will render a new page with the post and respective comments
+router.get('/forum/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id);
+    const commentData = await Comment.findAll({
+      where: {user_id: req.params.id}
+    })
+    const post = postData.get({ plain: true });
+    const comments = commentData.map((comment) => comment.get({plain: true}));
+    // res.status(200).json(post)
+    res.status(200).render('post', {
+      ...post,
+      ... comments,
+    });
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
