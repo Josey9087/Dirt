@@ -1,11 +1,18 @@
 [
     {
         "title": "my plant",
-        "body": "this is my plant"
+        "body": "this is my plant",
+        "user_id": 1
 
     },
     {
         "title": "A very cool plant",
-        "body": "Nice plant 10/10"
+        "body": "Nice plant 10/10",
+        "user_id": 2
+    },
+    {
+        "title": "My Philodendron",
+        "body": "How much water does it need?",
+        "user_id": 3
     }
 ]

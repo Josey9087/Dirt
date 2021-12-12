@@ -11,10 +11,6 @@ Comment.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        title: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         body: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -22,6 +18,14 @@ Comment.init(
         created_at: {
             type: DataTypes.DATE, 
             defaultValue: Sequelize.NOW,
+        },
+        post_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            references: {
+                model: 'post',
+                key: 'id',
+            },
         },
         user_id: {
             type: DataTypes.INTEGER,

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Comment, Favorite, Houseplant ,Photo, Post, PostComment, User } = require('.././models')
+const { Comment, Favorite, Houseplant ,Photo, Post, User } = require('.././models')
 const withAuth = require('../utils/auth');
 // const pageNum = require('../utils/page');
 const Sequelize = require('sequelize');
@@ -73,12 +73,16 @@ router.get('/forum/:id', async (req, res) => {
     const commentData = await Comment.findAll({
       where: {user_id: req.params.id}
     })
+    const userData = await User.findOne({
+      where: {id: req.params.id}
+    })
     const post = postData.get({ plain: true });
     const comments = commentData.map((comment) => comment.get({plain: true}));
     // res.status(200).json(post)
     res.status(200).render('post', {
       ...post,
       ... comments,
+      ... userData
     });
 
   } catch (err) {
