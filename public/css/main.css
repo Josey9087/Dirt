@@ -49,6 +49,9 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
+.navbar {
+  padding: 0;
+}
 .active,.active:hover{
   background: #251605;
   transition: .5s;
