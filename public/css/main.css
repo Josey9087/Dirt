@@ -460,3 +460,7 @@ input {
 .list-group-flush {
   margin-bottom: 5px;
 }
+
+.card {
+  max-width: 35%;
+}
