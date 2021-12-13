@@ -1,6 +1,6 @@
 
 const router = require('express').Router();
-const { Comment, Favorite, Houseplant, Photo, Post, PostComment, User } = require('../models')
+const { Comment, Favorite, Houseplant, Photo, Post, User } = require('../models')
 
 // route to add user
 router.post('/user', async (req, res) => {

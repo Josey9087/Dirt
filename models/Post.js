@@ -26,6 +26,10 @@ Post.init(
             key: 'id',
             },
         },
+        url: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         created_at: {
             type: DataTypes.DATE, 
             defaultValue: Sequelize.NOW,
