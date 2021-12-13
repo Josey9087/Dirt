@@ -1,23 +1,23 @@
-{{!-- 
+{{!--
 <section>
-        <div id="login-section">
-        <form id="login">
-            <input id="firstname" type="text" name="text"  placeholder="firstname">
-            <input id="lastname" type="text" name="text"  placeholder="lastname">
-            <input id="email" type="text" name="text"  placeholder="email">
-            <input id="username" type="text" name="text"  placeholder="username">
-            <input id="password" type="text" name="text"  placeholder="password">
-            <input type="submit" name="submit" class="user">
-          </form>
-        </div>
-    </section> --}}
+  <div id="login-section">
+    <form id="login">
+      <input id="firstname" type="text" name="text" placeholder="firstname">
+      <input id="lastname" type="text" name="text" placeholder="lastname">
+      <input id="email" type="text" name="text" placeholder="email">
+      <input id="username" type="text" name="text" placeholder="username">
+      <input id="password" type="text" name="text" placeholder="password">
+      <input type="submit" name="submit" class="user">
+    </form>
+  </div>
+</section> --}}
 
 <div class="row">
   <div class="col-auto">
     <h2>Welcome, {{username}}!</h2>
   </div>
 </div>
-    <div class="row">
+<div class="row justify-content-center">
   <div class="col-md-6">
     <h2>Login</h2>
     <form class="form user">
@@ -34,6 +34,9 @@
       </div>
     </form>
   </div>
+</div>
+
+<div class="row justify-content-center">
   <div class="col-md-6">
     <h2>Signup</h2>
 
@@ -58,4 +61,3 @@
 </div>
 
 <script src="./js/login.js"></script>
-

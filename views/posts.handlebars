@@ -3,26 +3,28 @@
  renders all posts with their respective title, image, and description
  -> need a #each handlebar function
  also renders them as an <a> tag with href set to /posts/${plant-id-here} so users can click to see comments -->
-  {{#each posts}}
-    <div class="card-deck">
-      <div class="card-container">
-        <div class="card mb-3 post-card-section">
-          <img src="{{this.url}}" class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title" data-plant-id={{this.id}}>{{this.title}}</h5>
-            <p class="card-text">{{this.body}}</p>
-            <p class="card-text"><small class="text-muted"></small></p>
-            <div class="card-footer">
-              <button class="btn details"><a href="/forum/{{this.id}}">See Comments</a></button>
-            </div>
+{{#each posts}}
+<div class="card-deck">
+  <div class="card-container">
+    <div class="card mb-3 post-card-section">
+      <img src="{{this.url}}" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title" data-plant-id={{this.id}}>{{this.title}}</h5>
+        <p class="card-text">{{this.body}}</p>
+        <p class="card-text"><small class="text-muted"></small></p>
+        <div class="card-footer">
+          <div class="col text-center">
+            <button class="btn details"><a href="/forum/{{this.id}}">See Comments</a></button>
           </div>
         </div>
       </div>
     </div>
-  {{/each}}
+  </div>
+</div>
+{{/each}}
 
-  <footer class="navbar fixed-bottom navbar-light">
-    <div class="container-fluid">
+<footer class="navbar fixed-bottom navbar-light">
+  <div class="container-fluid">
       <a class="navbar-brand" href="/upload">Add Post</a>
-    </div>
-  </footer>
+  </div>
+</footer>
