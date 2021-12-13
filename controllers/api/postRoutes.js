@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { urlencoded } = require('express');
-const { Comment, Favorite, Houseplant, Photo, Post, User } = require('../../models');
+const { Comment, Wishlist, Houseplant, Photo, Post, User } = require('../../models');
 
 // route to add post
 router.post('/', async (req,res) => {
