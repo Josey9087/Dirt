@@ -1,13 +1,17 @@
 const commentButton = document.querySelector('#comment-button')
 
-const createPostHandler = async (event) => {
+const createCommentHandler = async (event) => {
     event.preventDefault();
-    const commentBody = document.querySelector('#comment-input').value.trim()
-      commentdata = {"body": commentBody}
+    const commentBody = document.querySelector('#comment-input').value.trim();
+    const postIdString = document.querySelector('#comment-input').getAttribute('post-id');
+    const postId = parseInt(postIdString);
+    
+      commentdata = {"body": commentBody,
+                     "post_id": postId}
       try {
-          fetch('http://localhost:3001/api/posts/comment', {
-    method: 'POST', 
-    headers: {
+          fetch('/api/posts/comment', {
+            method: 'POST', 
+            headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(commentdata),
@@ -23,5 +27,6 @@ const createPostHandler = async (event) => {
       } catch (err) {
           console.log(err);
       }
-  }
+}
 
+commentButton.addEventListener('click', createCommentHandler)

@@ -12,7 +12,7 @@ const createPostHandler = async (event) => {
       console.log(JSON.stringify(postdata))
       console.log(postdata)
       try {
-          fetch('http://localhost:3001/api/posts/', {
+          fetch('/api/posts/', {
     method: 'POST', 
     headers: {
       'Content-Type': 'application/json',

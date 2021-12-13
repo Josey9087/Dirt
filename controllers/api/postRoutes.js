@@ -22,7 +22,7 @@ router.post('/comment', async (req,res) => {
         
         // redirects you to posts homepage
         console.log(postData)
-        res.status(500)
+        res.status(200).json(postData)
     } catch (err) {
         res.status(500).json(err)
     }
