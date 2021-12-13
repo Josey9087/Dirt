@@ -166,12 +166,18 @@ input {
   transition: 200ms transform ease-in-out;
 }
 
-.card:hover > .card-img-top > img {
+/* .card:hover > .card-img-top > img {
   transform: scale(1.025);
-    }
+    } */
 
 .card-body {
     font-size: .9rem;
+}
+
+.card.mb-3 {
+  border: 1px solid #251605;
+  border-radius: .25em;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.5);
 }
 
 .card-footer {
@@ -182,6 +188,11 @@ input {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+input.submit:hover {
+  background:#DD864F;
+  transition: .5s;
 }
 
 .btn {
@@ -201,8 +212,40 @@ input {
 
 .btn.btn-outline {
     background: #DD864F;
-    border: 1px solid var(--color);
+    border: 1px solid #251605;
+    border-radius: .25em;
     color: white;
+}
+
+.btn-outline:hover {
+  background: #251605;
+  transition: .5s;
+} 
+
+#next-button {
+  max-width: 25%;
+  background-color:#7C8A65;
+  color:#fff;
+  border: 1px solid #251605;
+  border-radius: .25em;
+}
+
+#next-button:hover {
+  background: #251605;
+  transition: .5s;
+}
+
+#prev-button {
+  max-width: 25%;
+  background-color:#7C8A65;
+  color:#fff;
+  border: 1px solid #251605;
+  border-radius: .25em;
+}
+
+#prev-button:hover {
+  background: #251605;
+  transition: .5s;
 }
 
 .card-section {
@@ -236,7 +279,11 @@ color: white;
 background-color: #DD864F;
 border: 1px solid #251605;
 border-radius: .25em;
-margin-left: 45%;
+/* margin-left: 50%; */
+}
+
+.navbar-brand {
+margin-inline: 48%;
 }
 
 div.container-fluid {
@@ -359,8 +406,8 @@ div.card-body {
 
 .btn.btn-primary {
   border: 1px solid #251605;
-  margin-top: 68%;
-  margin-left: 10%;
+  margin-top: 15%;
+  margin-left: 60%;
 }
 
 .btn.btn-primary1 {
@@ -445,6 +492,8 @@ input {
   margin-bottom:20px
 }
 
+/* User Profile Section */
+
 #profile-img {
   border-radius: 50%;
   
@@ -475,6 +524,39 @@ input {
   margin-bottom: 5px;
 }
 
+/* Plant Forum Section */
+
 .post-card-section {
   max-width: 40%;
+}
+
+.btn.details {
+  border: 1px solid #251605;
+  border-radius: .25em;
+  max-width: 25%;
+}
+
+.btn.details:hover {
+  background: #251605;
+  transition: .5s;
+}
+
+.card.mb-3.post-card-section {
+  border: 1px solid #251605;
+  border-radius: .35em;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.5);
+}
+
+/* Profile Section */
+
+.profile-info-card {
+  border: 1px solid #251605;
+  border-radius: .25em;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.5);
+}
+
+.container-md {
+  border: 1px solid #251605;
+  border-radius: .25em;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.5);
 }
