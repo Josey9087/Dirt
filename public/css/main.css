@@ -369,3 +369,40 @@ input {
     padding-left: 10px;
 }
 
+
+/* upload section */
+#photo-placeholder {
+  margin-top: 15px;
+  margin-left: 2vw;
+  background-color: #7C8A65;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4em;
+}
+
+.form-floating {
+  padding: 10px;
+}
+
+.form-control {
+  max-width: 100%;
+}
+
+#post-comment-area {
+  
+  height: 60vh;
+}
+
+#row-div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+#photo-placeholder:hover {
+  background-color: #5c664b;
+  cursor: pointer;
+} 

@@ -3,7 +3,9 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
-const hbs = exphbs.create({});
+const helpers = require('./utils/helpers')
+const hbs = exphbs.create({ helpers });
+const cloudinary = require('cloudinary')
 const sequelize = require('./config/connection');
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -25,6 +27,12 @@ const sess = {
     db: sequelize
   })
 };
+
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET
+})
 
 // Set Handlebars as the default template engine.
 app.engine('handlebars', hbs.engine);

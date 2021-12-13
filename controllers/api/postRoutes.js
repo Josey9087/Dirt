@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { urlencoded } = require('express');
+const cloudinary = require('cloudinary');
 const { Comment, Favorite, Houseplant, Photo, Post, User } = require('../../models')
 
 // route to add post
@@ -9,6 +10,18 @@ router.post('/', async (req,res) => {
         
         // redirects you to posts homepage
         res.status(200).json(postData)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+});
+
+// route to add comment
+router.post('/comment', async (req,res) => {
+    try {
+        const postData = await Comment.create(req.body);
+        
+        // redirects you to posts homepage
+        res.redirect('posts')
     } catch (err) {
         res.status(500).json(err)
     }
@@ -37,5 +50,8 @@ router.delete('/:id', async (req, res) => {
     }
 });
 
+router.get('/upload', (req,res) => {
+    
+})
 module.exports = router;
 
