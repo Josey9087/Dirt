@@ -1,14 +1,24 @@
-<form>
-  <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
+<div class="post-section">
+    <div class="row" id="row-div">
+        <div class="upload-image-container col-4">
+            <div id="photo-placeholder"><a>+</a></div>
+        </div>
+        <div class="form-container col-8">
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="title-input"></textarea>
+                <label for="title-input">Title</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="body-input"></textarea>
+                <label for="body-input">Post Content ...</label>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="row mb-3">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3">
+
+
+    <div class="d-grid fixed-bottom gap-2">
+        <button class="btn" type="button" id="post-button">Upload</button>
     </div>
-  </div>
-</form>
+
+
+<script src="./js/upload.js"></script>

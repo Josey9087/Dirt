@@ -6,18 +6,23 @@
   {{#each posts}}
     <div class="card-deck">
       <div class="card-container">
-        <div class="card mb-3">
+        <div class="card mb-3 post-card-section">
           <img src="{{this.url}}" class="card-img-top" alt="">
           <div class="card-body">
             <h5 class="card-title" data-plant-id={{this.id}}>{{this.title}}</h5>
             <p class="card-text">{{this.body}}</p>
             <p class="card-text"><small class="text-muted"></small></p>
             <div class="card-footer">
-              <button class="btn details"><a href="/forum/{{this.id}}">Details</a></button>
-              <button class="btn btn-outline">Save to Wishlist</button>
+              <button class="btn details"><a href="/forum/{{this.id}}">See Comments</a></button>
             </div>
           </div>
         </div>
       </div>
     </div>
   {{/each}}
+
+  <footer class="navbar fixed-bottom navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/upload">Add Post</a>
+    </div>
+  </footer>

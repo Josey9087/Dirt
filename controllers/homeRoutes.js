@@ -82,7 +82,7 @@ router.get('/forum', async (req,res) => {
 
 // route to get a post , its image, user, and its comments based off of id
 // this route will render a new page with the post and respective comments
-router.get('/forum/:id', async (req, res) => {
+router.get('/forum/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id);
     const commentData = await Comment.findAll({
