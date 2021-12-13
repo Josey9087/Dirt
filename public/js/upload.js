@@ -1,9 +1,12 @@
 const photoUpload = document.getElementById('photo-placeholder');
-const postButton = document.querySelector('#post-button')
+const postButton = document.querySelector('#post-button');
+const imageContainer = document.getElementById('upload-image-container');
+const imageUpload = document.getElementById('image-upload');
+const fileInputEl = document.getElementById('choose-file')
+let myFile;
 
-const createPostHandler = async (event) => {
-  event.preventDefault();
-  const postUrl = "https://res.cloudinary.com/mado8/image/upload/c_fill,h_500,w_500/v1638900838/Dirt/Houseplants/grow-echinocactus-indoors-1902973-01-31a0b611563b4614ba6ce10617e7af3c_cs6xfr.jpg";
+const createPostHandler = async (data) => {
+  const postUrl = data.url;
   const postTitle = document.querySelector('#title-input').value.trim()
   const postBody = document.querySelector('#body-input').value.trim()
   if (postTitle !== "" && postBody !== "") {
@@ -36,5 +39,32 @@ const createPostHandler = async (event) => {
   }
 }
 
-postButton.addEventListener('click', createPostHandler);
-// photoUpload.addEventListener('click', )
+fileInputEl.addEventListener('change', ({ target }) => {
+  postButton.removeAttribute('disabled')
+  if (target.files && target.files[0]) {
+      myFile = target.files[0]
+      const reader = new FileReader();
+      reader.readAsDataURL(myFile);
+      reader.onloadend = () => {
+          postButton.removeAttribute('disabled')
+      };
+  }
+});
+
+postButton.addEventListener('click', async (e) => {
+  e.preventDefault()
+  if (!myFile) return
+
+  const formData = new FormData();
+  formData.append('myFile', myFile);
+
+  await fetch('/api/upload', {
+      method: 'POST',
+      body: formData
+  })
+      .then(res => res.json())
+      .then((data) => {
+          createPostHandler(data)
+      })
+      .catch(err => console.error(err))
+})
