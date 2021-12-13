@@ -19,24 +19,24 @@ router.post('/upload', upload.single('myFile'), async ({ body, file }, res) => {
     const { filename, destination } = file;
     const pathToFile = `${destination}/${filename}`;
     try {
+         
+        
         const { url } = await cloudinary.uploader
             .upload(pathToFile, {
                 resource_type: "image",
                 public_id: 'posts',
+                crop: 'fill',
+                width: 500, 
+                height: 500
             },
                 (error) => {
                     if (error) console.error(error)
                 }
             );
 
-        const httpsUrl = `https://${url.split('://')[1]}` // convert http to https
+        const httpsUrl = `https://${url.split('://')[1]}` 
 
-        /**
-         * the resourse is now hosted, send back the url to user.
-         * if you'd like to save the url to a db, do this here
-         */
-
-        res.json({ ...body, url: httpsUrl }); // respond with url and  inital request body
+        res.json({ ...body, url: httpsUrl }); 
         unlink(pathToFile, (error) => {
             if (error) console.error(error)
         });
