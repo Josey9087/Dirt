@@ -101,6 +101,10 @@ router.get('/forum/:id', async (req, res) => {
   }
 });
 
+router.get('/upload', withAuth, async (req,res) => {
+  res.render('upload')
+})
+
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
