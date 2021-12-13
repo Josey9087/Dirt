@@ -2,7 +2,6 @@ const Comment = require('./Comment');
 const Favorite = require('./Favorite');
 const Houseplant = require('./Houseplant');
 const Photo = require('./Photo');
-const PostComment = require('./PostComment');
 const Post = require('./Post');
 const User = require('./User');
 
@@ -29,20 +28,13 @@ Photo.belongsTo(Post, {
 })
 
 // Posts have many comments through postcomments
-Post.belongsToMany(Comment, {
-    through: {
-        model: PostComment,
-    },
-    as: 'post-comment',
-    onDelete: 'CASCADE',
+Post.hasOne(Comment, {
+    foreignKey: 'post_id',
 })
 
 // Comments belong to post through postcomments
 Comment.belongsTo(Post, {
-    through: {
-        model: PostComment,
-    },
-    as: 'comment-post'
+    foreignKey: 'post_id',
 })
 
 // User has many houseplants through favorites
@@ -66,7 +58,6 @@ module.exports = {
     Favorite,
     Houseplant,
     Photo,
-    PostComment,
     Post, 
     User,
 }

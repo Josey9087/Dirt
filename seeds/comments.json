@@ -1,5 +1,32 @@
 [
     {
-        
+        "body": "Hurricane",
+        "post_id": 1,
+        "user_id": 3
+    },
+    {
+        "body": "Moon",
+        "post_id": 1,
+        "user_id": 2
+    },
+    {
+        "body": "Jail",
+        "post_id": 2,
+        "user_id": 3
+    },
+    {
+        "body": "Junya",
+        "post_id": 2,
+        "user_id": 1
+    },
+    {
+        "body": "Water",
+        "post_id": 3,
+        "user_id": 1
+    },
+    {
+        "body": "Ok Ok",
+        "post_id": 3,
+        "user_id": 2
     }
 ]

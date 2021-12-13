@@ -29,6 +29,10 @@ label.logo{
   padding: 0 100px;
   font-weight: bold;
 }
+#dirt-logo {
+  color: #251605;
+  text-decoration: none;
+}
 nav ul{
   float: right;
   margin-right: 20px;
@@ -45,7 +49,7 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
-a.active,a:hover{
+.active,.active:hover{
   background: #251605;
   transition: .5s;
 }
@@ -113,12 +117,8 @@ body {
   background: #D2FDC4;
   
 }
-section div {
-  border-style: solid;
-  border-width: 3px;
-  border-color: #251605;
-}
-form {
+
+#search-form {
   width: 400px;
   margin: auto;
   margin-top: 50px;
@@ -175,6 +175,12 @@ input {
     margin-top: 1rem;
 }
 
+.card-deck {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .btn {
     --color: #DD864F;
     background: var(--color);
@@ -196,7 +202,11 @@ input {
     color: white;
 }
 
-.cards-container {
+.card-section {
+  margin: 15px;
+}
+
+.card-container {
   display: flex;
   justify-content: center;
   width: 100%;  }
@@ -297,22 +307,7 @@ button.btn.view-post {
     background-color: rgb(235, 209, 186);
 }
 
-.card-header {
-    height: 50px;
-    font-size: 1.1em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-header:first-child {
-    border-radius: 10px 10px 0px 0px;
-}
-
-.card-text {
-    font-size: 1.1em;
-}
-
-#comment-div {
+.comment-div {
     margin: 10px;
     display: flex;
     justify-content: center;

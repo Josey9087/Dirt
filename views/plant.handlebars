@@ -1,3 +1,19 @@
 <!--render a single plant
 include its name, photo?, scientific name, light levels, and water levels
 -->
+<div class="card-deck">
+    <div class="cards-container">
+        <div class="card mb-3">
+            <img src="{{plant.url}}" class="card-img-top" alt="{{plant.name}}">
+            <div class="card-body">
+                <h5 class="card-title" data-plant-id={{plant.id}}>{{plant.name}}</h5>
+                <p class="card-text">{{plant.scientific_name}}</p>
+                <p class="card-text">Water Level: {{plant.water}}</p>
+                <p class="card=text">Light Level: {{plant.sunlight}}</p>
+                <div class="card-footer">
+                    <button class="btn btn-outline">Save to Wishlist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
