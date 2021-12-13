@@ -21,7 +21,8 @@ router.post('/comment', async (req,res) => {
         const postData = await Comment.create(req.body);
         
         // redirects you to posts homepage
-        res.redirect('posts')
+        console.log(postData)
+        res.status(500)
     } catch (err) {
         res.status(500).json(err)
     }

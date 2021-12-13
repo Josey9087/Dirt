@@ -256,6 +256,11 @@ button.btn.view-post {
 
   } */
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .comment-header{
     color: rgb(118, 118, 118);
 }
@@ -268,7 +273,7 @@ button.btn.view-post {
 
 .form-control {
     border-radius: 15px;
-    width: 90vw;
+    width: 40vw;
     height: 120px;
     padding: 15px;
     color:rgb(118, 118, 118);
@@ -283,31 +288,19 @@ button.btn.view-post {
 .wide-button {
     font-size: 1em;
     border-radius: 10px;
-    width: 90%;
+    width: 40%;
     height: 50px;
     border: none;
-    background-color: rgb(216, 216, 216);
+    background-color: #E29565;
 }
 
-.primary-button {
-    width: 70%;
-    margin-bottom: 100px;
-}
-
-.secondary-button {
-    background-color: rgb(235, 209, 186);
-    font-size: .8em;
-    width: 50%;
-    height: 40px;
-    margin-bottom: 50px;
-}
 
 #comment-button {
-    margin-bottom: 8px;
+  margin-bottom: 60px;
 }
 
 .wide-button:hover {
-    background-color: rgb(235, 209, 186);
+    background-color: #DD864F;
 }
 
 .comment-div {
@@ -315,6 +308,29 @@ button.btn.view-post {
     display: flex;
     justify-content: center;
 }
+
+.card-header {
+  font-size: smaller;
+  padding: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  max-height: 25px;
+}
+
+.card-header p {
+  display: inline;
+  max-height: fit-content;
+}
+
+div.card-body {
+  border-color: #D2FDC4;
+}
+
+#comment {
+  border-radius: 10px;
+  width: 60vw;
+}
+
 
 .header-div {
     display: flex;
@@ -345,11 +361,6 @@ button.btn.view-post {
     border-bottom: 2px solid rgb(165, 165, 165);
     font-weight: normal;
     font-size: 1.2em;
-}
-
-#comment {
-    border-radius: 10px;
-    width: 90vw;
 }
 
 #login-section {
@@ -395,7 +406,7 @@ input {
   max-width: 100%;
 }
 
-#post-comment-area {
+#body-input {
   
   height: 60vh;
 }
