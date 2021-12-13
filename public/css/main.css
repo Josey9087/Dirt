@@ -420,3 +420,43 @@ input {
   background-color: #5c664b;
   cursor: pointer;
 } 
+
+#paginate-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#paginate-div button {
+  margin-right: 20px;
+  margin-bottom:20px
+}
+
+#profile-img {
+  border-radius: 50%;
+  
+}
+
+.profile-container {
+  margin: 3vw
+}
+
+.profile-image-section {
+  margin-right: 1vw;
+}
+
+.profile-info-card {
+  width: 90%;
+  margin-top: 4vh;
+}
+
+#profile-info {
+  background-color: #fff;
+  height: 50vh;
+  width: 83%;
+  margin-left: 2vw;
+  margin-bottom: 50px;
+}
+
+.list-group-flush {
+  margin-bottom: 5px;
+}
