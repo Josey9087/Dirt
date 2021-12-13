@@ -357,6 +357,18 @@ div.card-body {
   margin-bottom: 10px;
 }
 
+.btn.btn-primary {
+  border: 1px solid #251605;
+  margin-top: 68%;
+  margin-left: 10%;
+}
+
+.btn.btn-primary1 {
+  border: 1px solid #251605;
+  margin-top: 50%;
+  margin-left: 10%;
+}
+
 .comment-header {
     border-bottom: 2px solid rgb(165, 165, 165);
     font-weight: normal;
@@ -373,9 +385,11 @@ div.card-body {
 
 #login {
   width: 56vw;
+
 }
 
 input {
+    /* width: 56vw; */
     height: 8vh;
     background-color: rgb(240, 240, 240);
     border: solid 2px rgb(118, 118, 118);
@@ -461,6 +475,6 @@ input {
   margin-bottom: 5px;
 }
 
-/* .card {
-  max-width: 35%;
-} */
+.post-card-section {
+  max-width: 40%;
+}
