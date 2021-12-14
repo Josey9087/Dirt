@@ -7,7 +7,7 @@ logoutbutton = document.querySelector('.logout')
         });
       
         if (response.ok) {
-          window.location.href = `/home`;
+          window.location.href = `/`;
         } else {
           alert(response.statusText);
         }
