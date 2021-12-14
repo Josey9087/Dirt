@@ -7,7 +7,7 @@ const op = Sequelize.Op;
 let offset = 0;
 
 // route to get all plants /plants
-router.get('/home', async (req,res) => {
+router.get('/', async (req,res) => {
   try {
       const plantData = await Houseplant.findAll({
         limit: 20,
