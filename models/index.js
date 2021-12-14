@@ -1,5 +1,5 @@
 const Comment = require('./Comment');
-const Favorite = require('./Favorite');
+const Wishlist = require('./Wishlist');
 const Houseplant = require('./Houseplant');
 const Photo = require('./Photo');
 const Post = require('./Post');
@@ -37,25 +37,25 @@ Comment.belongsTo(Post, {
     foreignKey: 'post_id',
 })
 
-// User has many houseplants through favorites
-User.belongsToMany(Houseplant, {
-    through: {
-        model: Favorite,
-    },
-    as: 'user-houseplants'
-})
+// User has many houseplants through Wishlists
+// User.belongsToMany(Houseplant, {
+//     through: {
+//         model: Wishlist,
+//     },
+//     as: 'user-houseplants'
+// })
 
-// Housplant belongs to many users through favorites
-Houseplant.belongsToMany(User, {
-    through: {
-        model: Favorite,
-    },
-    as: 'houseplant-users'
-})
+// // Housplant belongs to many users through Wishlists
+// Houseplant.belongsToMany(User, {
+//     through: {
+//         model: Wishlist,
+//     },
+//     as: 'houseplant-users'
+// })
 
 module.exports = {
     Comment,
-    Favorite,
+    Wishlist,
     Houseplant,
     Photo,
     Post, 

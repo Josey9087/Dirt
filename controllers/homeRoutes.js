@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Comment, Favorite, Houseplant ,Photo, Post, User } = require('.././models')
+const { Comment, Wishlist, Houseplant ,Photo, Post, User } = require('.././models')
 const withAuth = require('../utils/auth');
 // const pageNum = require('../utils/page');
 const Sequelize = require('sequelize');
@@ -122,6 +122,33 @@ router.get('/profile', withAuth, async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
+});
+
+router.get('/wishlist', async (req, res) => {
+  try{
+   if (req.session.logged_in){
+  const wishData = await Wishlist.findAll({where: {userid: req.session.user_id}})
+
+  wish = wishData.map((wish) => wish.get({plain:true}));
+  res.render('wishlist', {wish})
+};
+res.redirect('/login')
+} 
+catch (err) {
+  res.status(500).json(err);
+}
+});
+
+router.post('/wishlist', async (req, res) => {
+  const userid = req.session.user_id
+  const wishlistcreateData = await Wishlist.create({	
+    "userid"	: userid,
+    "plantid": req.body.plantid,
+   "name": req.body.name,
+   "scientific_name": req.body.scientific_name,
+"url": req.body.url
+})
+  res.status(200).json(wishlistcreateData);
 });
 
 router.get('/login', (req, res) => {
