@@ -131,6 +131,7 @@ router.get('/wishlist', async (req, res) => {
 
   wish = wishData.map((wish) => wish.get({plain:true}));
   res.render('wishlist', {wish})
+  return;
 };
 res.redirect('/login')
 } 
