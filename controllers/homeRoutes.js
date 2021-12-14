@@ -10,7 +10,7 @@ let offset = 0;
 router.get('/', async (req,res) => {
   try {
       const plantData = await Houseplant.findAll({
-        limit: 20,
+        limit: 100,
         offset: offset,
       });
 
